@@ -1,0 +1,3 @@
+service {
+   "HANA_IFOOD.db::CVD_BKPF" as "bkpf";
+}
