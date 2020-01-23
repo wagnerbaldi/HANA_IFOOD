@@ -100,5 +100,11 @@
       "object": "S4HANA_VIRTUAL_TABLES_TVTW",
       "schema": "S4HANA_VIRTUAL_TABLES"
     }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_TSPA": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_TSPA",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
   }
 }
