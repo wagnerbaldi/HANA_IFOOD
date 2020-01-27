@@ -1,9 +1,38 @@
 namespace HANA_IFOOD.db.data;
 
+context TableMappingModel {
+	type Rubric : String(12);	
+	type Bukrs  : String(4);
+	type Blart	: String(2);
+	
+	@Comment : 'Rubrica - Dados mestre de Rubrica'
+	entity ZTCA_RUBRIC {
+		@Comment : 'Rubrica'
+		key RUBRIC	: Rubric;
+		@Comment : 'Descrição da rubrica'
+		RUBRIC_TEXT	: String(50);
+	}
+
+	@Comment : 'Rubrica - Rubric by Company Code'
+	entity ZTSD_COMP_RUBRIC {
+		@Comment : 'Empresa'
+		key BUKRS	: Bukrs;	
+		@Comment : 'Rubrica'
+		key RUBRIC	: Rubric;
+	}
+
+	@Comment : 'Rubrica - Rubric by Account Document'
+	entity ZTSD_TY_DOC_RUB {
+		@Comment : 'Empresa'
+		key BLART	: Blart;	
+		@Comment : 'Rubrica'
+		key RUBRIC	: Rubric;
+	}
+
 	@Comment : 'Rubrica - Mapeamento'
 	entity ZTCA_RUBRIC_PAR {
-		@Comment : 'Rubric'
-		key RUBRIC	: String(12);
+		@Comment : 'Rubrica'
+		key RUBRIC	: Rubric;
 		@Comment : 'Debit and Credit Indicator'
 		key SHKZG_1	: Integer;
 		@Comment : 'Start Date'
@@ -23,7 +52,7 @@ namespace HANA_IFOOD.db.data;
 		@Comment : 'Profit Center'
 		PRCTR	: String(10);	
 		@Comment : 'Company Code'
-		BUKRS	: String(4);	
+		BUKRS	: Bukrs;	
 		@Comment : 'Business Place'
 		BRANCH	: String(4);
 		@Comment : 'Plant'
@@ -46,3 +75,4 @@ namespace HANA_IFOOD.db.data;
     technical configuration {
         column store;
     };
+}

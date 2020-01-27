@@ -2,7 +2,7 @@
 "format_version":1,
 "imports":[ 
 { 
-"target_table":"HANA_IFOOD.db.data::ZTCA_RUBRIC_PAR",
+"target_table": "HANA_IFOOD.db.data::TableMappingModel.ZTCA_RUBRIC_PAR",
 "source_data":{ 
 "data_type":"CSV",
 "file_name":"HANA_IFOOD.db.data::rubric.csv",
