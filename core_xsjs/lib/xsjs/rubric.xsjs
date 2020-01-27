@@ -5,7 +5,7 @@ var output = [] ;
 
 
 var conn = $.hdb.getConnection();
-var query = "select RUBRIC, SHKZG_1 from \"IFOOD\".\"HANA_IFOOD.db.data::ZTCA_RUBRIC_PAR\" ";
+var query = "select RUBRIC, SHKZG_1 from \"IFOOD\".\"HANA_IFOOD.db.data::TableMappingModel.ZTCA_RUBRIC_PAR\" ";
 var rs = conn.executeQuery(query);
 
 var body = "";
