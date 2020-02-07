@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="HANA_IFOOD.db::CVD_Teste" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CVD_Teste"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_BKPF">
+    <resourceUri>HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_BKPF</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_BKPF">
+  <attributes>
+    <attribute id="BUKRS" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BUKRS"/>
+    </attribute>
+    <attribute id="BELNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BELNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BELNR"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
