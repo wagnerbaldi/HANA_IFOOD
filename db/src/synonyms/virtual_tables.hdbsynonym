@@ -1,0 +1,110 @@
+{
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_BKPF": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_BKPF",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_ACDOCA": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_ACDOCA",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_TVAKT": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_TVAKT",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_J_1BSERVTYPES2": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_J_1BSERVTYPES2",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_J_1BSERVTYPES2T": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_J_1BSERVTYPES2T",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_J_1BTXJUR": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_J_1BTXJUR",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_J_1BTXJURT": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_J_1BTXJURT",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_J_1BSERVASSIGN2": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_J_1BSERVASSIGN2",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_MARA": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_MARA",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_MAKT": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_MAKT",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_J_1BSERVTYPES1": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_J_1BSERVTYPES1",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_J_1BSERVTYPES1T": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_J_1BSERVTYPES1T",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_T003": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_T003",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_T003T": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_T003T",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_TVAK": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_TVAK",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_TVKO": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_TVKO",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_TVTW": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_TVTW",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonyms::S4HANA_VIRTUAL_TABLES_TSPA": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_TSPA",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  }
+}
