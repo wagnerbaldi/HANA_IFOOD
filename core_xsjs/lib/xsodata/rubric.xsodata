@@ -1,0 +1,3 @@
+service {
+   "HANA_IFOOD.db.data::ZTCA_RUBRIC_PAR" as "Rubric" ;
+}
