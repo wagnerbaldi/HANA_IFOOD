@@ -1,0 +1,20 @@
+{
+  "ServiceName_1": {
+    "object_owner" : {
+      "schema_privileges":[
+        {
+          "reference":"S4HANA_VIRTUAL_TABLES",
+          "privileges_with_grant_option":["SELECT", "SELECT METADATA"]
+        }
+      ]
+    },
+    "application_user" : {
+      "schema_privileges":[
+        {
+          "reference":"S4HANA_VIRTUAL_TABLES",
+          "privileges_with_grant_option":["SELECT", "SELECT METADATA"]
+        }
+      ]
+    }
+  }
+}

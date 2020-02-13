@@ -19,6 +19,13 @@ modules:
     path: db
     requires:
       - name: hdi_db
+        properties:
+          TARGET_CONTAINER: '~{hdi-container-name}'
+      - name: CROSS_VIRTUAL_HANA
+        group: SERVICE_REPLACEMENTS
+        properties:
+          key: ServiceName_1
+          service: '~{the-service-name}'
   - name: core_xsjs
     type: nodejs
     path: core_xsjs
@@ -49,3 +56,9 @@ resources:
     parameters:
       service: sapui5_sb
       service-plan: sapui5-1.60
+  - name: CROSS_VIRTUAL_HANA
+    parameters:
+      service-name: CROSS_VIRTUAL_HANA
+    properties:
+      the-service-name: '${service-name}'
+    type: org.cloudfoundry.existing-service
