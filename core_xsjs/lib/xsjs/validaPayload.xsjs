@@ -3,14 +3,24 @@ body = JSON.parse(body);
 var mensagem = {};
 mensagem.DocumentReference = new Array();
 mensagem.DocumentReference.itemMessage = new Array();
-var itemMessage = [];
+var itemMessage = []; 
 var isItemPartnerValido = null;
 var isItemKeyValido = null;
 
 var conn = $.hdb.getConnection();
+var cc = [ '0000010100', '0000020100' ];
+var ccParam = '';
+cc.forEach(function(entry,index) {
+    ccParam += (index == 0) ? entry : ',' + entry;
+});
+//Rubricas
 var query = "select RUBRIC  from \"IFOOD\".\"HANA_IFOOD.db.data::ZTCA_RUBRIC_PAR\" ";
-var rs = conn.executeQuery(query);
-
+var rubricas = conn.executeQuery(query);
+//Centro de custo
+/*
+query = "select KOSTL, DATBI  from \"S4HANA_VIRTUAL_TABLES\".\"S4HANA_VIRTUAL_TABLES_CSKS\"  where KOSTL IN ('"+ ccParam +"')";
+var centroLucro = conn.executeQuery(query);
+*/
 for (var i = 0; i < body.AccountDocsPost.length; i++) {
     mensagem.DocumentReference.push({
         "DocumentReference": body.AccountDocsPost[i].DocumentReference
@@ -23,8 +33,8 @@ for (var i = 0; i < body.AccountDocsPost.length; i++) {
         count += parseInt(body.AccountDocsPost[i].Items[k].Amount);
 
         //Valida se rubrica está cadastrada
-        var pos = rs.map(function (e) {
-            return e.RUBRIC;
+        var pos = rubricas.map(function (r) {
+            return r.RUBRIC;
         }).indexOf(body.AccountDocsPost[i].Items[k].Rubric);
 
         if (pos === -1 && body.AccountDocsPost[i].Items[k].Rubric !== "") {

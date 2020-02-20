@@ -1,0 +1,1793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="HANA_IFOOD.db.models::CVD_ACDOCA" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CVD_ACDOCA"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ACDOCA">
+    <resourceUri>HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ACDOCA</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ACDOCA" filterExpressionLanguage="COLUMN_ENGINE">
+  <attributes>
+    <attribute id="RCLNT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RCLNT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RCLNT"/>
+    </attribute>
+    <attribute id="RLDNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RLDNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RLDNR"/>
+    </attribute>
+    <attribute id="RBUKRS" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RBUKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RBUKRS"/>
+    </attribute>
+    <attribute id="GJAHR" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GJAHR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="GJAHR"/>
+    </attribute>
+    <attribute id="BELNR" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BELNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BELNR"/>
+    </attribute>
+    <attribute id="DOCLN" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DOCLN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DOCLN"/>
+    </attribute>
+    <attribute id="RYEAR" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RYEAR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RYEAR"/>
+    </attribute>
+    <attribute id="DOCNR_LD" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DOCNR_LD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DOCNR_LD"/>
+    </attribute>
+    <attribute id="RRCTY" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RRCTY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RRCTY"/>
+    </attribute>
+    <attribute id="RMVCT" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RMVCT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RMVCT"/>
+    </attribute>
+    <attribute id="VORGN" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VORGN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VORGN"/>
+    </attribute>
+    <attribute id="VRGNG" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VRGNG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VRGNG"/>
+    </attribute>
+    <attribute id="BTTYPE" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BTTYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BTTYPE"/>
+    </attribute>
+    <attribute id="AWTYP" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWTYP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWTYP"/>
+    </attribute>
+    <attribute id="AWSYS" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWSYS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWSYS"/>
+    </attribute>
+    <attribute id="AWORG" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWORG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWORG"/>
+    </attribute>
+    <attribute id="AWREF" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWREF"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWREF"/>
+    </attribute>
+    <attribute id="AWITEM" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWITEM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWITEM"/>
+    </attribute>
+    <attribute id="AWITGRP" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWITGRP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWITGRP"/>
+    </attribute>
+    <attribute id="SUBTA" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SUBTA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SUBTA"/>
+    </attribute>
+    <attribute id="XREVERSING" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREVERSING"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XREVERSING"/>
+    </attribute>
+    <attribute id="XREVERSED" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREVERSED"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XREVERSED"/>
+    </attribute>
+    <attribute id="XTRUEREV" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XTRUEREV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XTRUEREV"/>
+    </attribute>
+    <attribute id="AWTYP_REV" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWTYP_REV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWTYP_REV"/>
+    </attribute>
+    <attribute id="AWORG_REV" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWORG_REV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWORG_REV"/>
+    </attribute>
+    <attribute id="AWREF_REV" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWREF_REV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AWREF_REV"/>
+    </attribute>
+    <attribute id="SUBTA_REV" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SUBTA_REV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SUBTA_REV"/>
+    </attribute>
+    <attribute id="XSETTLING" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSETTLING"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XSETTLING"/>
+    </attribute>
+    <attribute id="XSETTLED" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSETTLED"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XSETTLED"/>
+    </attribute>
+    <attribute id="PREC_AWTYP" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_AWTYP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_AWTYP"/>
+    </attribute>
+    <attribute id="PREC_AWSYS" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_AWSYS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_AWSYS"/>
+    </attribute>
+    <attribute id="PREC_AWORG" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_AWORG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_AWORG"/>
+    </attribute>
+    <attribute id="PREC_AWREF" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_AWREF"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_AWREF"/>
+    </attribute>
+    <attribute id="PREC_AWITEM" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_AWITEM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_AWITEM"/>
+    </attribute>
+    <attribute id="PREC_SUBTA" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_SUBTA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_SUBTA"/>
+    </attribute>
+    <attribute id="PREC_AWMULT" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_AWMULT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_AWMULT"/>
+    </attribute>
+    <attribute id="XSECONDARY" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSECONDARY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XSECONDARY"/>
+    </attribute>
+    <attribute id="SRC_AWTYP" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SRC_AWTYP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SRC_AWTYP"/>
+    </attribute>
+    <attribute id="SRC_AWSYS" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SRC_AWSYS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SRC_AWSYS"/>
+    </attribute>
+    <attribute id="SRC_AWORG" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SRC_AWORG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SRC_AWORG"/>
+    </attribute>
+    <attribute id="SRC_AWREF" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SRC_AWREF"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SRC_AWREF"/>
+    </attribute>
+    <attribute id="SRC_AWITEM" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SRC_AWITEM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SRC_AWITEM"/>
+    </attribute>
+    <attribute id="SRC_AWSUBIT" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SRC_AWSUBIT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SRC_AWSUBIT"/>
+    </attribute>
+    <attribute id="XCOMMITMENT" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XCOMMITMENT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XCOMMITMENT"/>
+    </attribute>
+    <attribute id="OBS_REASON" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OBS_REASON"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OBS_REASON"/>
+    </attribute>
+    <attribute id="RTCUR" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RTCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RTCUR"/>
+    </attribute>
+    <attribute id="RWCUR" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RWCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RWCUR"/>
+    </attribute>
+    <attribute id="RHCUR" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RHCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RHCUR"/>
+    </attribute>
+    <attribute id="RKCUR" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RKCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RKCUR"/>
+    </attribute>
+    <attribute id="ROCUR" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ROCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ROCUR"/>
+    </attribute>
+    <attribute id="RVCUR" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RVCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RVCUR"/>
+    </attribute>
+    <attribute id="RBCUR" order="52" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RBCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RBCUR"/>
+    </attribute>
+    <attribute id="RCCUR" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RCCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RCCUR"/>
+    </attribute>
+    <attribute id="RDCUR" order="54" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RDCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RDCUR"/>
+    </attribute>
+    <attribute id="RECUR" order="55" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RECUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RECUR"/>
+    </attribute>
+    <attribute id="RFCUR" order="56" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RFCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RFCUR"/>
+    </attribute>
+    <attribute id="RGCUR" order="57" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RGCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RGCUR"/>
+    </attribute>
+    <attribute id="RCO_OCUR" order="58" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RCO_OCUR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RCO_OCUR"/>
+    </attribute>
+    <attribute id="RUNIT" order="59" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RUNIT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RUNIT"/>
+    </attribute>
+    <attribute id="RVUNIT" order="60" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RVUNIT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RVUNIT"/>
+    </attribute>
+    <attribute id="RRUNIT" order="61" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RRUNIT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RRUNIT"/>
+    </attribute>
+    <attribute id="RIUNIT" order="62" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RIUNIT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RIUNIT"/>
+    </attribute>
+    <attribute id="QUNIT1" order="63" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QUNIT1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QUNIT1"/>
+    </attribute>
+    <attribute id="QUNIT2" order="64" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QUNIT2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QUNIT2"/>
+    </attribute>
+    <attribute id="QUNIT3" order="65" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QUNIT3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QUNIT3"/>
+    </attribute>
+    <attribute id="CO_MEINH" order="66" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_MEINH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_MEINH"/>
+    </attribute>
+    <attribute id="RACCT" order="67" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RACCT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RACCT"/>
+    </attribute>
+    <attribute id="RCNTR" order="68" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RCNTR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RCNTR"/>
+    </attribute>
+    <attribute id="PRCTR" order="69" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRCTR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PRCTR"/>
+    </attribute>
+    <attribute id="RFAREA" order="70" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RFAREA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RFAREA"/>
+    </attribute>
+    <attribute id="RBUSA" order="71" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RBUSA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RBUSA"/>
+    </attribute>
+    <attribute id="KOKRS" order="72" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KOKRS"/>
+    </attribute>
+    <attribute id="SEGMENT" order="73" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SEGMENT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SEGMENT"/>
+    </attribute>
+    <attribute id="SCNTR" order="74" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SCNTR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SCNTR"/>
+    </attribute>
+    <attribute id="PPRCTR" order="75" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPRCTR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PPRCTR"/>
+    </attribute>
+    <attribute id="SFAREA" order="76" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SFAREA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SFAREA"/>
+    </attribute>
+    <attribute id="SBUSA" order="77" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SBUSA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SBUSA"/>
+    </attribute>
+    <attribute id="RASSC" order="78" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RASSC"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RASSC"/>
+    </attribute>
+    <attribute id="PSEGMENT" order="79" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSEGMENT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSEGMENT"/>
+    </attribute>
+    <attribute id="TSL" order="80" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="TSL"/>
+    </attribute>
+    <attribute id="WSL" order="81" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="WSL"/>
+    </attribute>
+    <attribute id="WSL2" order="82" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WSL2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="WSL2"/>
+    </attribute>
+    <attribute id="WSL3" order="83" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WSL3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="WSL3"/>
+    </attribute>
+    <attribute id="HSL" order="84" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HSL"/>
+    </attribute>
+    <attribute id="KSL" order="85" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KSL"/>
+    </attribute>
+    <attribute id="OSL" order="86" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OSL"/>
+    </attribute>
+    <attribute id="VSL" order="87" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VSL"/>
+    </attribute>
+    <attribute id="BSL" order="88" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BSL"/>
+    </attribute>
+    <attribute id="CSL" order="89" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CSL"/>
+    </attribute>
+    <attribute id="DSL" order="90" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DSL"/>
+    </attribute>
+    <attribute id="ESL" order="91" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ESL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ESL"/>
+    </attribute>
+    <attribute id="FSL" order="92" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FSL"/>
+    </attribute>
+    <attribute id="GSL" order="93" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="GSL"/>
+    </attribute>
+    <attribute id="KFSL" order="94" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KFSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KFSL"/>
+    </attribute>
+    <attribute id="KFSL2" order="95" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KFSL2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KFSL2"/>
+    </attribute>
+    <attribute id="KFSL3" order="96" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KFSL3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KFSL3"/>
+    </attribute>
+    <attribute id="PSL" order="97" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSL"/>
+    </attribute>
+    <attribute id="PSL2" order="98" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSL2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSL2"/>
+    </attribute>
+    <attribute id="PSL3" order="99" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSL3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSL3"/>
+    </attribute>
+    <attribute id="PFSL" order="100" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PFSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PFSL"/>
+    </attribute>
+    <attribute id="PFSL2" order="101" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PFSL2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PFSL2"/>
+    </attribute>
+    <attribute id="PFSL3" order="102" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PFSL3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PFSL3"/>
+    </attribute>
+    <attribute id="CO_OSL" order="103" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_OSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_OSL"/>
+    </attribute>
+    <attribute id="HSLALT" order="104" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HSLALT"/>
+    </attribute>
+    <attribute id="KSLALT" order="105" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KSLALT"/>
+    </attribute>
+    <attribute id="OSLALT" order="106" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OSLALT"/>
+    </attribute>
+    <attribute id="VSLALT" order="107" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VSLALT"/>
+    </attribute>
+    <attribute id="BSLALT" order="108" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BSLALT"/>
+    </attribute>
+    <attribute id="CSLALT" order="109" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CSLALT"/>
+    </attribute>
+    <attribute id="DSLALT" order="110" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DSLALT"/>
+    </attribute>
+    <attribute id="ESLALT" order="111" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ESLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ESLALT"/>
+    </attribute>
+    <attribute id="FSLALT" order="112" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FSLALT"/>
+    </attribute>
+    <attribute id="GSLALT" order="113" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GSLALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="GSLALT"/>
+    </attribute>
+    <attribute id="HSLEXT" order="114" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HSLEXT"/>
+    </attribute>
+    <attribute id="KSLEXT" order="115" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KSLEXT"/>
+    </attribute>
+    <attribute id="OSLEXT" order="116" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OSLEXT"/>
+    </attribute>
+    <attribute id="VSLEXT" order="117" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VSLEXT"/>
+    </attribute>
+    <attribute id="BSLEXT" order="118" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BSLEXT"/>
+    </attribute>
+    <attribute id="CSLEXT" order="119" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CSLEXT"/>
+    </attribute>
+    <attribute id="DSLEXT" order="120" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DSLEXT"/>
+    </attribute>
+    <attribute id="ESLEXT" order="121" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ESLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ESLEXT"/>
+    </attribute>
+    <attribute id="FSLEXT" order="122" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FSLEXT"/>
+    </attribute>
+    <attribute id="GSLEXT" order="123" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GSLEXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="GSLEXT"/>
+    </attribute>
+    <attribute id="HVKWRT" order="124" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HVKWRT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HVKWRT"/>
+    </attribute>
+    <attribute id="MSL" order="125" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MSL"/>
+    </attribute>
+    <attribute id="MFSL" order="126" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MFSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MFSL"/>
+    </attribute>
+    <attribute id="VMSL" order="127" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VMSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VMSL"/>
+    </attribute>
+    <attribute id="VMFSL" order="128" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VMFSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VMFSL"/>
+    </attribute>
+    <attribute id="RMSL" order="129" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RMSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RMSL"/>
+    </attribute>
+    <attribute id="QUANT1" order="130" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QUANT1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QUANT1"/>
+    </attribute>
+    <attribute id="QUANT2" order="131" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QUANT2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QUANT2"/>
+    </attribute>
+    <attribute id="QUANT3" order="132" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QUANT3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QUANT3"/>
+    </attribute>
+    <attribute id="CO_MEGBTR" order="133" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_MEGBTR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_MEGBTR"/>
+    </attribute>
+    <attribute id="CO_MEFBTR" order="134" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_MEFBTR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_MEFBTR"/>
+    </attribute>
+    <attribute id="HSALK3" order="135" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HSALK3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HSALK3"/>
+    </attribute>
+    <attribute id="KSALK3" order="136" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSALK3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KSALK3"/>
+    </attribute>
+    <attribute id="OSALK3" order="137" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OSALK3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OSALK3"/>
+    </attribute>
+    <attribute id="VSALK3" order="138" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VSALK3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VSALK3"/>
+    </attribute>
+    <attribute id="HSALKV" order="139" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HSALKV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HSALKV"/>
+    </attribute>
+    <attribute id="KSALKV" order="140" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSALKV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KSALKV"/>
+    </attribute>
+    <attribute id="OSALKV" order="141" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OSALKV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OSALKV"/>
+    </attribute>
+    <attribute id="VSALKV" order="142" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VSALKV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VSALKV"/>
+    </attribute>
+    <attribute id="HPVPRS" order="143" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HPVPRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HPVPRS"/>
+    </attribute>
+    <attribute id="KPVPRS" order="144" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KPVPRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KPVPRS"/>
+    </attribute>
+    <attribute id="OPVPRS" order="145" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OPVPRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OPVPRS"/>
+    </attribute>
+    <attribute id="VPVPRS" order="146" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VPVPRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VPVPRS"/>
+    </attribute>
+    <attribute id="HSTPRS" order="147" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HSTPRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HSTPRS"/>
+    </attribute>
+    <attribute id="KSTPRS" order="148" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSTPRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KSTPRS"/>
+    </attribute>
+    <attribute id="OSTPRS" order="149" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OSTPRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OSTPRS"/>
+    </attribute>
+    <attribute id="VSTPRS" order="150" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VSTPRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VSTPRS"/>
+    </attribute>
+    <attribute id="HVKSAL" order="151" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HVKSAL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HVKSAL"/>
+    </attribute>
+    <attribute id="LBKUM" order="152" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LBKUM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="LBKUM"/>
+    </attribute>
+    <attribute id="DRCRK" order="153" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DRCRK"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DRCRK"/>
+    </attribute>
+    <attribute id="POPER" order="154" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="POPER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="POPER"/>
+    </attribute>
+    <attribute id="PERIV" order="155" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERIV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PERIV"/>
+    </attribute>
+    <attribute id="FISCYEARPER" order="156" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FISCYEARPER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FISCYEARPER"/>
+    </attribute>
+    <attribute id="BUDAT" order="157" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BUDAT"/>
+    </attribute>
+    <attribute id="BLDAT" order="158" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BLDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BLDAT"/>
+    </attribute>
+    <attribute id="BLART" order="159" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BLART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BLART"/>
+    </attribute>
+    <attribute id="BUZEI" order="160" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUZEI"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BUZEI"/>
+    </attribute>
+    <attribute id="ZUONR" order="161" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZUONR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ZUONR"/>
+    </attribute>
+    <attribute id="BSCHL" order="162" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSCHL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BSCHL"/>
+    </attribute>
+    <attribute id="BSTAT" order="163" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSTAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BSTAT"/>
+    </attribute>
+    <attribute id="LINETYPE" order="164" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LINETYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="LINETYPE"/>
+    </attribute>
+    <attribute id="KTOSL" order="165" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KTOSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KTOSL"/>
+    </attribute>
+    <attribute id="SLALITTYPE" order="166" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SLALITTYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SLALITTYPE"/>
+    </attribute>
+    <attribute id="XSPLITMOD" order="167" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSPLITMOD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XSPLITMOD"/>
+    </attribute>
+    <attribute id="USNAM" order="168" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="USNAM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="USNAM"/>
+    </attribute>
+    <attribute id="TIMESTAMP" order="169" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TIMESTAMP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="TIMESTAMP"/>
+    </attribute>
+    <attribute id="EPRCTR" order="170" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EPRCTR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="EPRCTR"/>
+    </attribute>
+    <attribute id="RHOART" order="171" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RHOART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RHOART"/>
+    </attribute>
+    <attribute id="GLACCOUNT_TYPE" order="172" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLACCOUNT_TYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="GLACCOUNT_TYPE"/>
+    </attribute>
+    <attribute id="KTOPL" order="173" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KTOPL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KTOPL"/>
+    </attribute>
+    <attribute id="LOKKT" order="174" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOKKT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="LOKKT"/>
+    </attribute>
+    <attribute id="KTOP2" order="175" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KTOP2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KTOP2"/>
+    </attribute>
+    <attribute id="REBZG" order="176" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REBZG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="REBZG"/>
+    </attribute>
+    <attribute id="REBZJ" order="177" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REBZJ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="REBZJ"/>
+    </attribute>
+    <attribute id="REBZZ" order="178" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REBZZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="REBZZ"/>
+    </attribute>
+    <attribute id="REBZT" order="179" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REBZT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="REBZT"/>
+    </attribute>
+    <attribute id="RBEST" order="180" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RBEST"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RBEST"/>
+    </attribute>
+    <attribute id="EBELN" order="181" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EBELN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="EBELN"/>
+    </attribute>
+    <attribute id="EBELP" order="182" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EBELP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="EBELP"/>
+    </attribute>
+    <attribute id="ZEKKN" order="183" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZEKKN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ZEKKN"/>
+    </attribute>
+    <attribute id="SGTXT" order="184" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SGTXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SGTXT"/>
+    </attribute>
+    <attribute id="KDAUF" order="185" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KDAUF"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KDAUF"/>
+    </attribute>
+    <attribute id="KDPOS" order="186" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KDPOS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KDPOS"/>
+    </attribute>
+    <attribute id="MATNR" order="187" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MATNR"/>
+    </attribute>
+    <attribute id="WERKS" order="188" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WERKS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="WERKS"/>
+    </attribute>
+    <attribute id="LIFNR" order="189" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LIFNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="LIFNR"/>
+    </attribute>
+    <attribute id="KUNNR" order="190" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUNNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KUNNR"/>
+    </attribute>
+    <attribute id="FBUDA" order="191" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FBUDA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FBUDA"/>
+    </attribute>
+    <attribute id="COCO_NUM" order="192" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COCO_NUM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="COCO_NUM"/>
+    </attribute>
+    <attribute id="KOART" order="193" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KOART"/>
+    </attribute>
+    <attribute id="UMSKZ" order="194" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UMSKZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="UMSKZ"/>
+    </attribute>
+    <attribute id="MWSKZ" order="195" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MWSKZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MWSKZ"/>
+    </attribute>
+    <attribute id="HBKID" order="196" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HBKID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HBKID"/>
+    </attribute>
+    <attribute id="HKTID" order="197" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HKTID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HKTID"/>
+    </attribute>
+    <attribute id="XOPVW" order="198" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XOPVW"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XOPVW"/>
+    </attribute>
+    <attribute id="AUGDT" order="199" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUGDT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AUGDT"/>
+    </attribute>
+    <attribute id="AUGBL" order="200" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUGBL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AUGBL"/>
+    </attribute>
+    <attribute id="AUGGJ" order="201" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUGGJ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AUGGJ"/>
+    </attribute>
+    <attribute id="AFABE" order="202" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AFABE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AFABE"/>
+    </attribute>
+    <attribute id="ANLN1" order="203" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANLN1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ANLN1"/>
+    </attribute>
+    <attribute id="ANLN2" order="204" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANLN2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ANLN2"/>
+    </attribute>
+    <attribute id="BZDAT" order="205" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BZDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BZDAT"/>
+    </attribute>
+    <attribute id="ANBWA" order="206" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANBWA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ANBWA"/>
+    </attribute>
+    <attribute id="MOVCAT" order="207" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MOVCAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MOVCAT"/>
+    </attribute>
+    <attribute id="DEPR_PERIOD" order="208" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DEPR_PERIOD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DEPR_PERIOD"/>
+    </attribute>
+    <attribute id="ANLGR" order="209" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANLGR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ANLGR"/>
+    </attribute>
+    <attribute id="ANLGR2" order="210" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANLGR2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ANLGR2"/>
+    </attribute>
+    <attribute id="SETTLEMENT_RULE" order="211" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SETTLEMENT_RULE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SETTLEMENT_RULE"/>
+    </attribute>
+    <attribute id="ANLKL" order="212" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANLKL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ANLKL"/>
+    </attribute>
+    <attribute id="KTOGR" order="213" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KTOGR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KTOGR"/>
+    </attribute>
+    <attribute id="PANL1" order="214" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PANL1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PANL1"/>
+    </attribute>
+    <attribute id="PANL2" order="215" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PANL2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PANL2"/>
+    </attribute>
+    <attribute id="UBZDT_PN" order="216" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UBZDT_PN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="UBZDT_PN"/>
+    </attribute>
+    <attribute id="XVABG_PN" order="217" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XVABG_PN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XVABG_PN"/>
+    </attribute>
+    <attribute id="PROZS_PN" order="218" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PROZS_PN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PROZS_PN"/>
+    </attribute>
+    <attribute id="XMANPROPVAL_PN" order="219" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XMANPROPVAL_PN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XMANPROPVAL_PN"/>
+    </attribute>
+    <attribute id="KALNR" order="220" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KALNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KALNR"/>
+    </attribute>
+    <attribute id="VPRSV" order="221" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VPRSV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VPRSV"/>
+    </attribute>
+    <attribute id="MLAST" order="222" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MLAST"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MLAST"/>
+    </attribute>
+    <attribute id="KZBWS" order="223" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZBWS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KZBWS"/>
+    </attribute>
+    <attribute id="XOBEW" order="224" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XOBEW"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XOBEW"/>
+    </attribute>
+    <attribute id="SOBKZ" order="225" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SOBKZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SOBKZ"/>
+    </attribute>
+    <attribute id="VTSTAMP" order="226" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTSTAMP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VTSTAMP"/>
+    </attribute>
+    <attribute id="MAT_KDAUF" order="227" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAT_KDAUF"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MAT_KDAUF"/>
+    </attribute>
+    <attribute id="MAT_KDPOS" order="228" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAT_KDPOS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MAT_KDPOS"/>
+    </attribute>
+    <attribute id="MAT_PSPNR" order="229" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAT_PSPNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MAT_PSPNR"/>
+    </attribute>
+    <attribute id="MAT_PS_POSID" order="230" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAT_PS_POSID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MAT_PS_POSID"/>
+    </attribute>
+    <attribute id="MAT_LIFNR" order="231" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAT_LIFNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MAT_LIFNR"/>
+    </attribute>
+    <attribute id="BWTAR" order="232" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BWTAR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BWTAR"/>
+    </attribute>
+    <attribute id="BWKEY" order="233" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BWKEY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BWKEY"/>
+    </attribute>
+    <attribute id="HPEINH" order="234" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HPEINH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HPEINH"/>
+    </attribute>
+    <attribute id="KPEINH" order="235" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KPEINH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KPEINH"/>
+    </attribute>
+    <attribute id="OPEINH" order="236" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OPEINH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OPEINH"/>
+    </attribute>
+    <attribute id="VPEINH" order="237" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VPEINH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VPEINH"/>
+    </attribute>
+    <attribute id="MLPTYP" order="238" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MLPTYP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MLPTYP"/>
+    </attribute>
+    <attribute id="MLCATEG" order="239" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MLCATEG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MLCATEG"/>
+    </attribute>
+    <attribute id="QSBVALT" order="240" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QSBVALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QSBVALT"/>
+    </attribute>
+    <attribute id="QSPROCESS" order="241" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QSPROCESS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QSPROCESS"/>
+    </attribute>
+    <attribute id="PERART" order="242" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PERART"/>
+    </attribute>
+    <attribute id="MLPOSNR" order="243" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MLPOSNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MLPOSNR"/>
+    </attribute>
+    <attribute id="BUKRS_SENDER" order="244" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BUKRS_SENDER"/>
+    </attribute>
+    <attribute id="RACCT_SENDER" order="245" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RACCT_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RACCT_SENDER"/>
+    </attribute>
+    <attribute id="ACCAS_SENDER" order="246" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACCAS_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACCAS_SENDER"/>
+    </attribute>
+    <attribute id="ACCASTY_SENDER" order="247" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACCASTY_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACCASTY_SENDER"/>
+    </attribute>
+    <attribute id="OBJNR" order="248" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OBJNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OBJNR"/>
+    </attribute>
+    <attribute id="HRKFT" order="249" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HRKFT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HRKFT"/>
+    </attribute>
+    <attribute id="HKGRP" order="250" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HKGRP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="HKGRP"/>
+    </attribute>
+    <attribute id="PAROB1" order="251" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PAROB1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PAROB1"/>
+    </attribute>
+    <attribute id="PAROBSRC" order="252" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PAROBSRC"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PAROBSRC"/>
+    </attribute>
+    <attribute id="USPOB" order="253" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="USPOB"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="USPOB"/>
+    </attribute>
+    <attribute id="CO_BELKZ" order="254" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BELKZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BELKZ"/>
+    </attribute>
+    <attribute id="CO_BEKNZ" order="255" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BEKNZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BEKNZ"/>
+    </attribute>
+    <attribute id="BELTP" order="256" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BELTP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BELTP"/>
+    </attribute>
+    <attribute id="MUVFLG" order="257" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MUVFLG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MUVFLG"/>
+    </attribute>
+    <attribute id="GKONT" order="258" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GKONT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="GKONT"/>
+    </attribute>
+    <attribute id="GKOAR" order="259" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GKOAR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="GKOAR"/>
+    </attribute>
+    <attribute id="ERLKZ" order="260" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ERLKZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ERLKZ"/>
+    </attribute>
+    <attribute id="PERNR" order="261" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PERNR"/>
+    </attribute>
+    <attribute id="PAOBJNR" order="262" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PAOBJNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PAOBJNR"/>
+    </attribute>
+    <attribute id="XPAOBJNR_CO_REL" order="263" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XPAOBJNR_CO_REL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="XPAOBJNR_CO_REL"/>
+    </attribute>
+    <attribute id="SCOPE" order="264" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SCOPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SCOPE"/>
+    </attribute>
+    <attribute id="LOGSYSO" order="265" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOGSYSO"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="LOGSYSO"/>
+    </attribute>
+    <attribute id="PBUKRS" order="266" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PBUKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PBUKRS"/>
+    </attribute>
+    <attribute id="PSCOPE" order="267" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSCOPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSCOPE"/>
+    </attribute>
+    <attribute id="LOGSYSP" order="268" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOGSYSP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="LOGSYSP"/>
+    </attribute>
+    <attribute id="BWSTRAT" order="269" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BWSTRAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BWSTRAT"/>
+    </attribute>
+    <attribute id="OBJNR_HK" order="270" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OBJNR_HK"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OBJNR_HK"/>
+    </attribute>
+    <attribute id="AUFNR_ORG" order="271" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFNR_ORG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AUFNR_ORG"/>
+    </attribute>
+    <attribute id="UKOSTL" order="272" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UKOSTL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="UKOSTL"/>
+    </attribute>
+    <attribute id="ULSTAR" order="273" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ULSTAR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ULSTAR"/>
+    </attribute>
+    <attribute id="UPRZNR" order="274" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UPRZNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="UPRZNR"/>
+    </attribute>
+    <attribute id="UPRCTR" order="275" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UPRCTR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="UPRCTR"/>
+    </attribute>
+    <attribute id="ACCAS" order="276" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACCAS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACCAS"/>
+    </attribute>
+    <attribute id="ACCASTY" order="277" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACCASTY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACCASTY"/>
+    </attribute>
+    <attribute id="LSTAR" order="278" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LSTAR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="LSTAR"/>
+    </attribute>
+    <attribute id="AUFNR" order="279" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AUFNR"/>
+    </attribute>
+    <attribute id="AUTYP" order="280" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUTYP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AUTYP"/>
+    </attribute>
+    <attribute id="PS_PSP_PNR" order="281" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PS_PSP_PNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PS_PSP_PNR"/>
+    </attribute>
+    <attribute id="PS_POSID" order="282" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PS_POSID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PS_POSID"/>
+    </attribute>
+    <attribute id="PS_PRJ_PNR" order="283" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PS_PRJ_PNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PS_PRJ_PNR"/>
+    </attribute>
+    <attribute id="PS_PSPID" order="284" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PS_PSPID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PS_PSPID"/>
+    </attribute>
+    <attribute id="NPLNR" order="285" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NPLNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="NPLNR"/>
+    </attribute>
+    <attribute id="NPLNR_VORGN" order="286" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NPLNR_VORGN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="NPLNR_VORGN"/>
+    </attribute>
+    <attribute id="PRZNR" order="287" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRZNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PRZNR"/>
+    </attribute>
+    <attribute id="KSTRG" order="288" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSTRG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KSTRG"/>
+    </attribute>
+    <attribute id="BEMOT" order="289" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BEMOT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BEMOT"/>
+    </attribute>
+    <attribute id="RSRCE" order="290" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RSRCE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RSRCE"/>
+    </attribute>
+    <attribute id="QMNUM" order="291" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QMNUM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="QMNUM"/>
+    </attribute>
+    <attribute id="ERKRS" order="292" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ERKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ERKRS"/>
+    </attribute>
+    <attribute id="PACCAS" order="293" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PACCAS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PACCAS"/>
+    </attribute>
+    <attribute id="PACCASTY" order="294" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PACCASTY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PACCASTY"/>
+    </attribute>
+    <attribute id="PLSTAR" order="295" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLSTAR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PLSTAR"/>
+    </attribute>
+    <attribute id="PAUFNR" order="296" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PAUFNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PAUFNR"/>
+    </attribute>
+    <attribute id="PAUTYP" order="297" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PAUTYP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PAUTYP"/>
+    </attribute>
+    <attribute id="PPS_PSP_PNR" order="298" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPS_PSP_PNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PPS_PSP_PNR"/>
+    </attribute>
+    <attribute id="PPS_POSID" order="299" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPS_POSID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PPS_POSID"/>
+    </attribute>
+    <attribute id="PPS_PRJ_PNR" order="300" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPS_PRJ_PNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PPS_PRJ_PNR"/>
+    </attribute>
+    <attribute id="PPS_PSPID" order="301" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPS_PSPID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PPS_PSPID"/>
+    </attribute>
+    <attribute id="PKDAUF" order="302" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PKDAUF"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PKDAUF"/>
+    </attribute>
+    <attribute id="PKDPOS" order="303" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PKDPOS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PKDPOS"/>
+    </attribute>
+    <attribute id="PPAOBJNR" order="304" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPAOBJNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PPAOBJNR"/>
+    </attribute>
+    <attribute id="PNPLNR" order="305" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PNPLNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PNPLNR"/>
+    </attribute>
+    <attribute id="PNPLNR_VORGN" order="306" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PNPLNR_VORGN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PNPLNR_VORGN"/>
+    </attribute>
+    <attribute id="PPRZNR" order="307" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPRZNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PPRZNR"/>
+    </attribute>
+    <attribute id="PKSTRG" order="308" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PKSTRG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PKSTRG"/>
+    </attribute>
+    <attribute id="CO_ACCASTY_N1" order="309" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_ACCASTY_N1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_ACCASTY_N1"/>
+    </attribute>
+    <attribute id="CO_ACCASTY_N2" order="310" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_ACCASTY_N2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_ACCASTY_N2"/>
+    </attribute>
+    <attribute id="CO_ACCASTY_N3" order="311" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_ACCASTY_N3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_ACCASTY_N3"/>
+    </attribute>
+    <attribute id="CO_ZLENR" order="312" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_ZLENR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_ZLENR"/>
+    </attribute>
+    <attribute id="CO_BELNR" order="313" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BELNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BELNR"/>
+    </attribute>
+    <attribute id="CO_BUZEI" order="314" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BUZEI"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BUZEI"/>
+    </attribute>
+    <attribute id="CO_BUZEI1" order="315" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BUZEI1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BUZEI1"/>
+    </attribute>
+    <attribute id="CO_BUZEI2" order="316" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BUZEI2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BUZEI2"/>
+    </attribute>
+    <attribute id="CO_BUZEI5" order="317" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BUZEI5"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BUZEI5"/>
+    </attribute>
+    <attribute id="CO_BUZEI6" order="318" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BUZEI6"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BUZEI6"/>
+    </attribute>
+    <attribute id="CO_BUZEI7" order="319" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BUZEI7"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_BUZEI7"/>
+    </attribute>
+    <attribute id="CO_REFBZ" order="320" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_REFBZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_REFBZ"/>
+    </attribute>
+    <attribute id="CO_REFBZ1" order="321" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_REFBZ1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_REFBZ1"/>
+    </attribute>
+    <attribute id="CO_REFBZ2" order="322" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_REFBZ2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_REFBZ2"/>
+    </attribute>
+    <attribute id="CO_REFBZ5" order="323" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_REFBZ5"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_REFBZ5"/>
+    </attribute>
+    <attribute id="CO_REFBZ6" order="324" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_REFBZ6"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_REFBZ6"/>
+    </attribute>
+    <attribute id="CO_REFBZ7" order="325" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_REFBZ7"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CO_REFBZ7"/>
+    </attribute>
+    <attribute id="WORK_ITEM_ID" order="326" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WORK_ITEM_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="WORK_ITEM_ID"/>
+    </attribute>
+    <attribute id="ARBID" order="327" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ARBID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ARBID"/>
+    </attribute>
+    <attribute id="VORNR" order="328" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VORNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VORNR"/>
+    </attribute>
+    <attribute id="AUFPS" order="329" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFPS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="AUFPS"/>
+    </attribute>
+    <attribute id="UVORN" order="330" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UVORN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="UVORN"/>
+    </attribute>
+    <attribute id="EQUNR" order="331" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EQUNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="EQUNR"/>
+    </attribute>
+    <attribute id="TPLNR" order="332" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TPLNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="TPLNR"/>
+    </attribute>
+    <attribute id="ISTRU" order="333" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ISTRU"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ISTRU"/>
+    </attribute>
+    <attribute id="ILART" order="334" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ILART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ILART"/>
+    </attribute>
+    <attribute id="PLKNZ" order="335" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLKNZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PLKNZ"/>
+    </attribute>
+    <attribute id="ARTPR" order="336" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ARTPR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ARTPR"/>
+    </attribute>
+    <attribute id="PRIOK" order="337" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRIOK"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PRIOK"/>
+    </attribute>
+    <attribute id="MAUFNR" order="338" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAUFNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MAUFNR"/>
+    </attribute>
+    <attribute id="MATKL_MM" order="339" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATKL_MM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MATKL_MM"/>
+    </attribute>
+    <attribute id="PLANNED_PARTS_WORK" order="340" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANNED_PARTS_WORK"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PLANNED_PARTS_WORK"/>
+    </attribute>
+    <attribute id="FKART" order="341" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FKART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FKART"/>
+    </attribute>
+    <attribute id="VKORG" order="342" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VKORG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VKORG"/>
+    </attribute>
+    <attribute id="VTWEG" order="343" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTWEG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VTWEG"/>
+    </attribute>
+    <attribute id="SPART" order="344" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SPART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SPART"/>
+    </attribute>
+    <attribute id="MATNR_COPA" order="345" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR_COPA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MATNR_COPA"/>
+    </attribute>
+    <attribute id="MATKL" order="346" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATKL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MATKL"/>
+    </attribute>
+    <attribute id="KDGRP" order="347" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KDGRP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KDGRP"/>
+    </attribute>
+    <attribute id="LAND1" order="348" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAND1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="LAND1"/>
+    </attribute>
+    <attribute id="BRSCH" order="349" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BRSCH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BRSCH"/>
+    </attribute>
+    <attribute id="BZIRK" order="350" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BZIRK"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BZIRK"/>
+    </attribute>
+    <attribute id="KUNRE" order="351" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUNRE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KUNRE"/>
+    </attribute>
+    <attribute id="KUNWE" order="352" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUNWE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KUNWE"/>
+    </attribute>
+    <attribute id="KONZS" order="353" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KONZS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="KONZS"/>
+    </attribute>
+    <attribute id="ACDOC_COPA_EEW_DUMMY_PA" order="354" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACDOC_COPA_EEW_DUMMY_PA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACDOC_COPA_EEW_DUMMY_PA"/>
+    </attribute>
+    <attribute id="DUMMY_MRKT_SGMNT_EEW_PS" order="355" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DUMMY_MRKT_SGMNT_EEW_PS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DUMMY_MRKT_SGMNT_EEW_PS"/>
+    </attribute>
+    <attribute id="RE_BUKRS" order="356" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RE_BUKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RE_BUKRS"/>
+    </attribute>
+    <attribute id="RE_ACCOUNT" order="357" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RE_ACCOUNT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RE_ACCOUNT"/>
+    </attribute>
+    <attribute id="FIKRS" order="358" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FIKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FIKRS"/>
+    </attribute>
+    <attribute id="FISTL" order="359" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FISTL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FISTL"/>
+    </attribute>
+    <attribute id="MEASURE" order="360" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MEASURE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MEASURE"/>
+    </attribute>
+    <attribute id="RFUND" order="361" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RFUND"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RFUND"/>
+    </attribute>
+    <attribute id="RGRANT_NBR" order="362" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RGRANT_NBR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RGRANT_NBR"/>
+    </attribute>
+    <attribute id="RBUDGET_PD" order="363" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RBUDGET_PD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RBUDGET_PD"/>
+    </attribute>
+    <attribute id="SFUND" order="364" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SFUND"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SFUND"/>
+    </attribute>
+    <attribute id="SGRANT_NBR" order="365" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SGRANT_NBR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SGRANT_NBR"/>
+    </attribute>
+    <attribute id="SBUDGET_PD" order="366" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SBUDGET_PD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SBUDGET_PD"/>
+    </attribute>
+    <attribute id="VNAME" order="367" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VNAME"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VNAME"/>
+    </attribute>
+    <attribute id="EGRUP" order="368" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EGRUP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="EGRUP"/>
+    </attribute>
+    <attribute id="RECID" order="369" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RECID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RECID"/>
+    </attribute>
+    <attribute id="VPTNR" order="370" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VPTNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VPTNR"/>
+    </attribute>
+    <attribute id="BTYPE" order="371" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BTYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BTYPE"/>
+    </attribute>
+    <attribute id="ETYPE" order="372" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ETYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ETYPE"/>
+    </attribute>
+    <attribute id="PRODPER" order="373" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODPER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PRODPER"/>
+    </attribute>
+    <attribute id="BILLM" order="374" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BILLM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BILLM"/>
+    </attribute>
+    <attribute id="POM" order="375" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="POM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="POM"/>
+    </attribute>
+    <attribute id="CBRUNID" order="376" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CBRUNID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CBRUNID"/>
+    </attribute>
+    <attribute id="JVACTIVITY" order="377" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="JVACTIVITY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="JVACTIVITY"/>
+    </attribute>
+    <attribute id="PVNAME" order="378" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PVNAME"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PVNAME"/>
+    </attribute>
+    <attribute id="PEGRUP" order="379" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PEGRUP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PEGRUP"/>
+    </attribute>
+    <attribute id="S_RECIND" order="380" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_RECIND"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="S_RECIND"/>
+    </attribute>
+    <attribute id="CBRACCT" order="381" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CBRACCT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CBRACCT"/>
+    </attribute>
+    <attribute id="CBOBJNR" order="382" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CBOBJNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CBOBJNR"/>
+    </attribute>
+    <attribute id="SWENR" order="383" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SWENR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SWENR"/>
+    </attribute>
+    <attribute id="SGENR" order="384" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SGENR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SGENR"/>
+    </attribute>
+    <attribute id="SGRNR" order="385" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SGRNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SGRNR"/>
+    </attribute>
+    <attribute id="SMENR" order="386" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SMENR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SMENR"/>
+    </attribute>
+    <attribute id="RECNNR" order="387" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RECNNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RECNNR"/>
+    </attribute>
+    <attribute id="SNKSL" order="388" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SNKSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SNKSL"/>
+    </attribute>
+    <attribute id="SEMPSL" order="389" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SEMPSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SEMPSL"/>
+    </attribute>
+    <attribute id="DABRZ" order="390" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DABRZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DABRZ"/>
+    </attribute>
+    <attribute id="PSWENR" order="391" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSWENR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSWENR"/>
+    </attribute>
+    <attribute id="PSGENR" order="392" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSGENR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSGENR"/>
+    </attribute>
+    <attribute id="PSGRNR" order="393" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSGRNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSGRNR"/>
+    </attribute>
+    <attribute id="PSMENR" order="394" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSMENR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSMENR"/>
+    </attribute>
+    <attribute id="PRECNNR" order="395" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRECNNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PRECNNR"/>
+    </attribute>
+    <attribute id="PSNKSL" order="396" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSNKSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSNKSL"/>
+    </attribute>
+    <attribute id="PSEMPSL" order="397" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSEMPSL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSEMPSL"/>
+    </attribute>
+    <attribute id="PDABRZ" order="398" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PDABRZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PDABRZ"/>
+    </attribute>
+    <attribute id="ACROBJTYPE" order="399" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACROBJTYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACROBJTYPE"/>
+    </attribute>
+    <attribute id="ACROBJ_ID" order="400" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACROBJ_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACROBJ_ID"/>
+    </attribute>
+    <attribute id="ACRSOBJ_ID" order="401" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACRSOBJ_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACRSOBJ_ID"/>
+    </attribute>
+    <attribute id="ACRITMTYPE" order="402" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACRITMTYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACRITMTYPE"/>
+    </attribute>
+    <attribute id="VALOBJTYPE" order="403" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VALOBJTYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VALOBJTYPE"/>
+    </attribute>
+    <attribute id="VALOBJ_ID" order="404" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VALOBJ_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VALOBJ_ID"/>
+    </attribute>
+    <attribute id="VALSOBJ_ID" order="405" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VALSOBJ_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="VALSOBJ_ID"/>
+    </attribute>
+    <attribute id="NETDT" order="406" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NETDT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="NETDT"/>
+    </attribute>
+    <attribute id="RISK_CLASS" order="407" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RISK_CLASS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="RISK_CLASS"/>
+    </attribute>
+    <attribute id="ACDOC_EEW_DUMMY" order="408" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACDOC_EEW_DUMMY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACDOC_EEW_DUMMY"/>
+    </attribute>
+    <attribute id="DUMMY_INCL_EEW_COBL" order="409" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DUMMY_INCL_EEW_COBL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="DUMMY_INCL_EEW_COBL"/>
+    </attribute>
+    <attribute id="FUP_ACTION" order="410" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FUP_ACTION"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="FUP_ACTION"/>
+    </attribute>
+    <attribute id="MIG_SOURCE" order="411" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MIG_SOURCE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MIG_SOURCE"/>
+    </attribute>
+    <attribute id="MIG_DOCLN" order="412" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MIG_DOCLN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="MIG_DOCLN"/>
+    </attribute>
+    <attribute id="_DATAAGING" order="413" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="_DATAAGING"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="_DATAAGING"/>
+    </attribute>
+    <attribute id="ZZBUPLA" order="414" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZZBUPLA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ZZBUPLA"/>
+    </attribute>
+    <attribute id="PREC_BUKRS" order="415" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_BUKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_BUKRS"/>
+    </attribute>
+    <attribute id="PREC_GJAHR" order="416" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_GJAHR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_GJAHR"/>
+    </attribute>
+    <attribute id="PREC_BELNR" order="417" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_BELNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_BELNR"/>
+    </attribute>
+    <attribute id="PREC_DOCLN" order="418" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PREC_DOCLN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PREC_DOCLN"/>
+    </attribute>
+    <attribute id="CLOSING_RUN_ID" order="419" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CLOSING_RUN_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="CLOSING_RUN_ID"/>
+    </attribute>
+    <attribute id="WWERT" order="420" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WWERT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="WWERT"/>
+    </attribute>
+    <attribute id="INV_MOV_CATEG" order="421" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INV_MOV_CATEG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="INV_MOV_CATEG"/>
+    </attribute>
+    <attribute id="SERVICE_DOC_TYPE" order="422" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SERVICE_DOC_TYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SERVICE_DOC_TYPE"/>
+    </attribute>
+    <attribute id="SERVICE_DOC_ID" order="423" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SERVICE_DOC_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SERVICE_DOC_ID"/>
+    </attribute>
+    <attribute id="SERVICE_DOC_ITEM_ID" order="424" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SERVICE_DOC_ITEM_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SERVICE_DOC_ITEM_ID"/>
+    </attribute>
+    <attribute id="SERVICE_CONTRACT_TYPE" order="425" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SERVICE_CONTRACT_TYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SERVICE_CONTRACT_TYPE"/>
+    </attribute>
+    <attribute id="SERVICE_CONTRACT_ID" order="426" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SERVICE_CONTRACT_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SERVICE_CONTRACT_ID"/>
+    </attribute>
+    <attribute id="SERVICE_CONTRACT_ITEM_ID" order="427" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SERVICE_CONTRACT_ITEM_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SERVICE_CONTRACT_ITEM_ID"/>
+    </attribute>
+    <attribute id="PSERVICE_DOC_TYPE" order="428" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSERVICE_DOC_TYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSERVICE_DOC_TYPE"/>
+    </attribute>
+    <attribute id="PSERVICE_DOC_ID" order="429" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSERVICE_DOC_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSERVICE_DOC_ID"/>
+    </attribute>
+    <attribute id="PSERVICE_DOC_ITEM_ID" order="430" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSERVICE_DOC_ITEM_ID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="PSERVICE_DOC_ITEM_ID"/>
+    </attribute>
+    <attribute id="OVERTIMECAT" order="431" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OVERTIMECAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="OVERTIMECAT"/>
+    </attribute>
+    <attribute id="BDGT_ACCOUNT" order="432" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BDGT_ACCOUNT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BDGT_ACCOUNT"/>
+    </attribute>
+    <attribute id="BDGT_ACCOUNT_COCODE" order="433" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BDGT_ACCOUNT_COCODE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BDGT_ACCOUNT_COCODE"/>
+    </attribute>
+    <attribute id="BDGT_CNSMPN_DATE" order="434" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BDGT_CNSMPN_DATE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BDGT_CNSMPN_DATE"/>
+    </attribute>
+    <attribute id="BDGT_CNSMPN_PERIOD" order="435" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BDGT_CNSMPN_PERIOD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BDGT_CNSMPN_PERIOD"/>
+    </attribute>
+    <attribute id="BDGT_CNSMPN_YEAR" order="436" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BDGT_CNSMPN_YEAR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BDGT_CNSMPN_YEAR"/>
+    </attribute>
+    <attribute id="BDGT_RELEVANT" order="437" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BDGT_RELEVANT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BDGT_RELEVANT"/>
+    </attribute>
+    <attribute id="BDGT_CNSMPN_TYPE" order="438" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BDGT_CNSMPN_TYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BDGT_CNSMPN_TYPE"/>
+    </attribute>
+    <attribute id="BDGT_CNSMPN_AMOUNT_TYPE" order="439" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BDGT_CNSMPN_AMOUNT_TYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="BDGT_CNSMPN_AMOUNT_TYPE"/>
+    </attribute>
+    <attribute id="ACRVALDAT" order="440" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACRVALDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="ACRVALDAT"/>
+    </attribute>
+    <attribute id="SDM_VERSION" order="441" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SDM_VERSION"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_ACDOCA" columnName="SDM_VERSION"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+
+  <filter>&quot;XREVERSED&quot; != 'X' and &quot;XTRUEREV&quot; != 'X' AND &quot;RLDNR&quot; = '0L'</filter>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>  

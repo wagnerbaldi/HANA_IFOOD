@@ -9,7 +9,7 @@
   </DataSource>
 </dataSources>
 <calculationViews/>
-<logicalModel id="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_BKPF">
+<logicalModel id="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_BKPF" filterExpressionLanguage="COLUMN_ENGINE">
   <attributes>
     <attribute id="BUKRS" order="1" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="BUKRS"/>
@@ -19,11 +19,693 @@
       <descriptions defaultDescription="BELNR"/>
       <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BELNR"/>
     </attribute>
+  
+    <attribute id="BUKRS_1" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS_1"/>
+  
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BUKRS"/>
+  
+    </attribute>
+    <attribute id="BELNR_1" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BELNR_1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BELNR"/>
+    </attribute>
+    <attribute id="MANDT" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="MANDT"/>
+    </attribute>
+    <attribute id="GJAHR" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GJAHR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GJAHR"/>
+    </attribute>
+    <attribute id="BLART" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BLART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BLART"/>
+    </attribute>
+    <attribute id="BLDAT" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BLDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BLDAT"/>
+    </attribute>
+    <attribute id="BUDAT" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BUDAT"/>
+    </attribute>
+    <attribute id="MONAT" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MONAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="MONAT"/>
+    </attribute>
+    <attribute id="CPUDT" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CPUDT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CPUDT"/>
+    </attribute>
+    <attribute id="CPUTM" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CPUTM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CPUTM"/>
+    </attribute>
+    <attribute id="AEDAT" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AEDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="AEDAT"/>
+    </attribute>
+    <attribute id="UPDDT" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UPDDT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="UPDDT"/>
+    </attribute>
+    <attribute id="WWERT" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WWERT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="WWERT"/>
+    </attribute>
+    <attribute id="USNAM" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="USNAM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="USNAM"/>
+    </attribute>
+    <attribute id="TCODE" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TCODE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="TCODE"/>
+    </attribute>
+    <attribute id="BVORG" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BVORG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BVORG"/>
+    </attribute>
+    <attribute id="XBLNR" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XBLNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XBLNR"/>
+    </attribute>
+    <attribute id="DBBLG" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DBBLG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="DBBLG"/>
+    </attribute>
+    <attribute id="DBBLG_GJAHR" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DBBLG_GJAHR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="DBBLG_GJAHR"/>
+    </attribute>
+    <attribute id="DBBLG_BUKRS" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DBBLG_BUKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="DBBLG_BUKRS"/>
+    </attribute>
+    <attribute id="STBLG" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="STBLG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="STBLG"/>
+    </attribute>
+    <attribute id="STJAH" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="STJAH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="STJAH"/>
+    </attribute>
+    <attribute id="BKTXT" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BKTXT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BKTXT"/>
+    </attribute>
+    <attribute id="WAERS" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WAERS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="WAERS"/>
+    </attribute>
+    <attribute id="KURSF" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KURSF"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KURSF"/>
+    </attribute>
+    <attribute id="KZWRS" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZWRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KZWRS"/>
+    </attribute>
+    <attribute id="KZKRS" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KZKRS"/>
+    </attribute>
+    <attribute id="BSTAT" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSTAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BSTAT"/>
+    </attribute>
+    <attribute id="XNETB" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XNETB"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XNETB"/>
+    </attribute>
+    <attribute id="FRATH" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FRATH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="FRATH"/>
+    </attribute>
+    <attribute id="XRUEB" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XRUEB"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XRUEB"/>
+    </attribute>
+    <attribute id="GLVOR" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLVOR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLVOR"/>
+    </attribute>
+    <attribute id="GRPID" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GRPID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GRPID"/>
+    </attribute>
+    <attribute id="DOKID" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DOKID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="DOKID"/>
+    </attribute>
+    <attribute id="ARCID" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ARCID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="ARCID"/>
+    </attribute>
+    <attribute id="IBLAR" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="IBLAR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="IBLAR"/>
+    </attribute>
+    <attribute id="AWTYP" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWTYP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="AWTYP"/>
+    </attribute>
+    <attribute id="AWKEY" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWKEY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="AWKEY"/>
+    </attribute>
+    <attribute id="FIKRS" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FIKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="FIKRS"/>
+    </attribute>
+    <attribute id="HWAER" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HWAER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="HWAER"/>
+    </attribute>
+    <attribute id="HWAE2" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HWAE2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="HWAE2"/>
+    </attribute>
+    <attribute id="HWAE3" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HWAE3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="HWAE3"/>
+    </attribute>
+    <attribute id="KURS2" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KURS2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KURS2"/>
+    </attribute>
+    <attribute id="KURS3" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KURS3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KURS3"/>
+    </attribute>
+    <attribute id="BASW2" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BASW2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BASW2"/>
+    </attribute>
+    <attribute id="BASW3" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BASW3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BASW3"/>
+    </attribute>
+    <attribute id="UMRD2" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UMRD2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="UMRD2"/>
+    </attribute>
+    <attribute id="UMRD3" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UMRD3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="UMRD3"/>
+    </attribute>
+    <attribute id="XSTOV" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSTOV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XSTOV"/>
+    </attribute>
+    <attribute id="STODT" order="52" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="STODT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="STODT"/>
+    </attribute>
+    <attribute id="XMWST" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XMWST"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XMWST"/>
+    </attribute>
+    <attribute id="CURT2" order="54" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CURT2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CURT2"/>
+    </attribute>
+    <attribute id="CURT3" order="55" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CURT3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CURT3"/>
+    </attribute>
+    <attribute id="KUTY2" order="56" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUTY2"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KUTY2"/>
+    </attribute>
+    <attribute id="KUTY3" order="57" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUTY3"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KUTY3"/>
+    </attribute>
+    <attribute id="XSNET" order="58" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSNET"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XSNET"/>
+    </attribute>
+    <attribute id="AUSBK" order="59" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUSBK"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="AUSBK"/>
+    </attribute>
+    <attribute id="XUSVR" order="60" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XUSVR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XUSVR"/>
+    </attribute>
+    <attribute id="DUEFL" order="61" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DUEFL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="DUEFL"/>
+    </attribute>
+    <attribute id="AWSYS" order="62" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWSYS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="AWSYS"/>
+    </attribute>
+    <attribute id="TXKRS" order="63" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TXKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="TXKRS"/>
+    </attribute>
+    <attribute id="CTXKRS" order="64" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CTXKRS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CTXKRS"/>
+    </attribute>
+    <attribute id="LOTKZ" order="65" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOTKZ"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="LOTKZ"/>
+    </attribute>
+    <attribute id="XWVOF" order="66" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XWVOF"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XWVOF"/>
+    </attribute>
+    <attribute id="STGRD" order="67" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="STGRD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="STGRD"/>
+    </attribute>
+    <attribute id="PPNAM" order="68" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPNAM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PPNAM"/>
+    </attribute>
+    <attribute id="PPDAT" order="69" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PPDAT"/>
+    </attribute>
+    <attribute id="PPTME" order="70" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPTME"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PPTME"/>
+    </attribute>
+    <attribute id="PPTCOD" order="71" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PPTCOD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PPTCOD"/>
+    </attribute>
+    <attribute id="BRNCH" order="72" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BRNCH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BRNCH"/>
+    </attribute>
+    <attribute id="NUMPG" order="73" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NUMPG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="NUMPG"/>
+    </attribute>
+    <attribute id="ADISC" order="74" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADISC"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="ADISC"/>
+    </attribute>
+    <attribute id="XREF1_HD" order="75" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREF1_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XREF1_HD"/>
+    </attribute>
+    <attribute id="XREF2_HD" order="76" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREF2_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XREF2_HD"/>
+    </attribute>
+    <attribute id="XREVERSAL" order="77" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREVERSAL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XREVERSAL"/>
+    </attribute>
+    <attribute id="REINDAT" order="78" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REINDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="REINDAT"/>
+    </attribute>
+    <attribute id="RLDNR" order="79" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RLDNR"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="RLDNR"/>
+    </attribute>
+    <attribute id="LDGRP" order="80" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LDGRP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="LDGRP"/>
+    </attribute>
+    <attribute id="PROPMANO" order="81" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PROPMANO"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PROPMANO"/>
+    </attribute>
+    <attribute id="XBLNR_ALT" order="82" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XBLNR_ALT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XBLNR_ALT"/>
+    </attribute>
+    <attribute id="VATDATE" order="83" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VATDATE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="VATDATE"/>
+    </attribute>
+    <attribute id="DOCCAT" order="84" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DOCCAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="DOCCAT"/>
+    </attribute>
+    <attribute id="XSPLIT" order="85" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSPLIT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XSPLIT"/>
+    </attribute>
+    <attribute id="CASH_ALLOC" order="86" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CASH_ALLOC"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CASH_ALLOC"/>
+    </attribute>
+    <attribute id="FOLLOW_ON" order="87" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FOLLOW_ON"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="FOLLOW_ON"/>
+    </attribute>
+    <attribute id="XREORG" order="88" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREORG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XREORG"/>
+    </attribute>
+    <attribute id="SUBSET" order="89" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SUBSET"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="SUBSET"/>
+    </attribute>
+    <attribute id="KURST" order="90" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KURST"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KURST"/>
+    </attribute>
+    <attribute id="KURSX" order="91" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KURSX"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KURSX"/>
+    </attribute>
+    <attribute id="KUR2X" order="92" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUR2X"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KUR2X"/>
+    </attribute>
+    <attribute id="KUR3X" order="93" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUR3X"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KUR3X"/>
+    </attribute>
+    <attribute id="XMCA" order="94" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XMCA"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XMCA"/>
+    </attribute>
+    <attribute id="RESUBMISSION" order="95" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RESUBMISSION"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="RESUBMISSION"/>
+    </attribute>
+    <attribute id="LOGSYSTEM_SENDER" order="96" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOGSYSTEM_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="LOGSYSTEM_SENDER"/>
+    </attribute>
+    <attribute id="BUKRS_SENDER" order="97" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BUKRS_SENDER"/>
+    </attribute>
+    <attribute id="BELNR_SENDER" order="98" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BELNR_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BELNR_SENDER"/>
+    </attribute>
+    <attribute id="GJAHR_SENDER" order="99" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GJAHR_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GJAHR_SENDER"/>
+    </attribute>
+    <attribute id="INTSUBID" order="100" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INTSUBID"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="INTSUBID"/>
+    </attribute>
+    <attribute id="AWORG_REV" order="101" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWORG_REV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="AWORG_REV"/>
+    </attribute>
+    <attribute id="AWREF_REV" order="102" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWREF_REV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="AWREF_REV"/>
+    </attribute>
+    <attribute id="XREVERSING" order="103" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREVERSING"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XREVERSING"/>
+    </attribute>
+    <attribute id="XREVERSED" order="104" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREVERSED"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XREVERSED"/>
+    </attribute>
+    <attribute id="GLBTGRP" order="105" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLBTGRP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLBTGRP"/>
+    </attribute>
+    <attribute id="CO_VRGNG" order="106" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_VRGNG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CO_VRGNG"/>
+    </attribute>
+    <attribute id="CO_REFBT" order="107" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_REFBT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CO_REFBT"/>
+    </attribute>
+    <attribute id="CO_ALEBN" order="108" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_ALEBN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CO_ALEBN"/>
+    </attribute>
+    <attribute id="CO_VALDT" order="109" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_VALDT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CO_VALDT"/>
+    </attribute>
+    <attribute id="CO_BELNR_SENDER" order="110" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO_BELNR_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CO_BELNR_SENDER"/>
+    </attribute>
+    <attribute id="KOKRS_SENDER" order="111" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOKRS_SENDER"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KOKRS_SENDER"/>
+    </attribute>
+    <attribute id="ACC_PRINCIPLE" order="112" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ACC_PRINCIPLE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="ACC_PRINCIPLE"/>
+    </attribute>
+    <attribute id="_DATAAGING" order="113" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="_DATAAGING"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="_DATAAGING"/>
+    </attribute>
+    <attribute id="TRAVA_PN" order="114" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TRAVA_PN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="TRAVA_PN"/>
+    </attribute>
+    <attribute id="LDGRPSPEC_PN" order="115" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LDGRPSPEC_PN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="LDGRPSPEC_PN"/>
+    </attribute>
+    <attribute id="AFABESPEC_PN" order="116" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AFABESPEC_PN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="AFABESPEC_PN"/>
+    </attribute>
+    <attribute id="XSECONDARY" order="117" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XSECONDARY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="XSECONDARY"/>
+    </attribute>
+    <attribute id="REPROCESSING_STATUS_CODE" order="118" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REPROCESSING_STATUS_CODE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="REPROCESSING_STATUS_CODE"/>
+    </attribute>
+    <attribute id="TRR_PARTIAL_IND" order="119" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TRR_PARTIAL_IND"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="TRR_PARTIAL_IND"/>
+    </attribute>
+    <attribute id="ITEM_REMOVAL_STATUS" order="120" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ITEM_REMOVAL_STATUS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="ITEM_REMOVAL_STATUS"/>
+    </attribute>
+    <attribute id="PENRC" order="121" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PENRC"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PENRC"/>
+    </attribute>
+    <attribute id="ANXTYPE" order="122" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANXTYPE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="ANXTYPE"/>
+    </attribute>
+    <attribute id="ANXAMNT" order="123" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANXAMNT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="ANXAMNT"/>
+    </attribute>
+    <attribute id="ANXPERC" order="124" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANXPERC"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="ANXPERC"/>
+    </attribute>
+    <attribute id="ZVAT_INDC" order="125" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZVAT_INDC"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="ZVAT_INDC"/>
+    </attribute>
+    <attribute id="_SAPF15_STATUS" order="126" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="_SAPF15_STATUS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="/SAPF15/STATUS"/>
+    </attribute>
+    <attribute id="PSOTY" order="127" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSOTY"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSOTY"/>
+    </attribute>
+    <attribute id="PSOAK" order="128" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSOAK"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSOAK"/>
+    </attribute>
+    <attribute id="PSOKS" order="129" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSOKS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSOKS"/>
+    </attribute>
+    <attribute id="PSOSG" order="130" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSOSG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSOSG"/>
+    </attribute>
+    <attribute id="PSOFN" order="131" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSOFN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSOFN"/>
+    </attribute>
+    <attribute id="INTFORM" order="132" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INTFORM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="INTFORM"/>
+    </attribute>
+    <attribute id="INTDATE" order="133" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INTDATE"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="INTDATE"/>
+    </attribute>
+    <attribute id="PSOBT" order="134" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSOBT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSOBT"/>
+    </attribute>
+    <attribute id="PSOZL" order="135" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSOZL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSOZL"/>
+    </attribute>
+    <attribute id="PSODT" order="136" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSODT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSODT"/>
+    </attribute>
+    <attribute id="PSOTM" order="137" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSOTM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PSOTM"/>
+    </attribute>
+    <attribute id="FM_UMART" order="138" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FM_UMART"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="FM_UMART"/>
+    </attribute>
+    <attribute id="CCINS" order="139" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CCINS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CCINS"/>
+    </attribute>
+    <attribute id="CCNUM" order="140" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CCNUM"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CCNUM"/>
+    </attribute>
+    <attribute id="SSBLK" order="141" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SSBLK"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="SSBLK"/>
+    </attribute>
+    <attribute id="BATCH" order="142" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BATCH"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BATCH"/>
+    </attribute>
+    <attribute id="SNAME" order="143" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SNAME"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="SNAME"/>
+    </attribute>
+    <attribute id="SAMPLED" order="144" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SAMPLED"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="SAMPLED"/>
+    </attribute>
+    <attribute id="EXCLUDE_FLAG" order="145" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EXCLUDE_FLAG"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="EXCLUDE_FLAG"/>
+    </attribute>
+    <attribute id="BLIND" order="146" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BLIND"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BLIND"/>
+    </attribute>
+    <attribute id="OFFSET_STATUS" order="147" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OFFSET_STATUS"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="OFFSET_STATUS"/>
+    </attribute>
+    <attribute id="OFFSET_REFER_DAT" order="148" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OFFSET_REFER_DAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="OFFSET_REFER_DAT"/>
+    </attribute>
+    <attribute id="KNUMV" order="149" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KNUMV"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="KNUMV"/>
+    </attribute>
+    <attribute id="BLO" order="150" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BLO"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="BLO"/>
+    </attribute>
+    <attribute id="CNT" order="151" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CNT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="CNT"/>
+    </attribute>
+    <attribute id="PYBASTYP" order="152" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PYBASTYP"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PYBASTYP"/>
+    </attribute>
+    <attribute id="PYBASNO" order="153" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PYBASNO"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PYBASNO"/>
+    </attribute>
+    <attribute id="PYBASDAT" order="154" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PYBASDAT"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PYBASDAT"/>
+    </attribute>
+    <attribute id="PYIBAN" order="155" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PYIBAN"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="PYIBAN"/>
+    </attribute>
+    <attribute id="INWARDNO_HD" order="156" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INWARDNO_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="INWARDNO_HD"/>
+    </attribute>
+    <attribute id="INWARDDT_HD" order="157" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INWARDDT_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="INWARDDT_HD"/>
+    </attribute>
+    <attribute id="GLO_REF1_HD" order="158" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_REF1_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_REF1_HD"/>
+    </attribute>
+    <attribute id="GLO_DAT1_HD" order="159" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_DAT1_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_DAT1_HD"/>
+    </attribute>
+    <attribute id="GLO_REF2_HD" order="160" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_REF2_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_REF2_HD"/>
+    </attribute>
+    <attribute id="GLO_DAT2_HD" order="161" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_DAT2_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_DAT2_HD"/>
+    </attribute>
+    <attribute id="GLO_REF3_HD" order="162" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_REF3_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_REF3_HD"/>
+    </attribute>
+    <attribute id="GLO_DAT3_HD" order="163" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_DAT3_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_DAT3_HD"/>
+    </attribute>
+    <attribute id="GLO_REF4_HD" order="164" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_REF4_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_REF4_HD"/>
+    </attribute>
+    <attribute id="GLO_DAT4_HD" order="165" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_DAT4_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_DAT4_HD"/>
+    </attribute>
+    <attribute id="GLO_REF5_HD" order="166" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_REF5_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_REF5_HD"/>
+    </attribute>
+    <attribute id="GLO_DAT5_HD" order="167" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_DAT5_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_DAT5_HD"/>
+    </attribute>
+    <attribute id="GLO_BP1_HD" order="168" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_BP1_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_BP1_HD"/>
+    </attribute>
+    <attribute id="GLO_BP2_HD" order="169" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLO_BP2_HD"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="GLO_BP2_HD"/>
+    </attribute>
+    <attribute id="EV_POSTNG_CTRL" order="170" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EV_POSTNG_CTRL"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="EV_POSTNG_CTRL"/>
+    </attribute>
+  
+    <attribute id="MONAT_1" order="171" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MONAT_1"/>
+      <keyMapping columnObjectName="S4HANA_VIRTUAL_TABLES_BKPF" columnName="MONAT"/>
+    </attribute>
   </attributes>
   <calculatedAttributes/>
   <baseMeasures/>
   <calculatedMeasures/>
   <restrictedMeasures/>
+
+  <filter>&quot;BLART&quot; = 'BL'</filter>
 </logicalModel>
 <layout>
   <shapes>

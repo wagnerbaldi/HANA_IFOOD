@@ -16,5 +16,35 @@
       "object": "S4HANA_VIRTUAL_TABLES_SKA1",
       "schema": "S4HANA_VIRTUAL_TABLES"
     }
+  },
+  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_BUT000": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_BUT000",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_BUT0ID": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_BUT0ID",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_CSKS": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_CSKS",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_CEPC": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_CEPC",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_J_1BBRANCH": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_J_1BBRANCH",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
   }
 }
