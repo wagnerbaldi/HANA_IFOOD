@@ -1,14 +1,13 @@
 var body = $.request.body.asString();
-var i = 0;
-var k = 0;
+body = JSON.parse(body);
+for (var i = 0; i < body.AccountDocsPost.length; i++) {
+	
+    for (var k = 0; k < body.AccountDocsPost[i].Items.length; k++) {
+        if (body.AccountDocsPost[i].Items[k].ItemType === "H") {
 
-for( i in body.AccountDocsPost ){
-	for ( k in body.AccountDocsPost.Items ) {
-	//	if( body.AccountDocsPost[i].Items[k].ItemType === "H" ){
-			
-			body.AccountDocsPost[i].Items[k].Amount *= -1 ;
-	//	}
-	}
+            body.AccountDocsPost[i].Items[k].Amount *= -1;
+        }
+    }
 }
 
 $.response.setBody(body);

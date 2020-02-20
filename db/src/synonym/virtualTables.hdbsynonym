@@ -10,5 +10,11 @@
       "object": "S4HANA_VIRTUAL_TABLES_ACDOCA",
       "schema": "S4HANA_VIRTUAL_TABLES"
     }
+  },
+  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_SKA1": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_SKA1",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
   }
 }
