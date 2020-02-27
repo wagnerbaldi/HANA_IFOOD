@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="HANA_IFOOD.db.models::CVD_RUBRICA" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CVD_RUBRICA"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC">
+    <resourceUri>HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC</resourceUri>
+  </DataSource>
+  <DataSource id="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_PAR">
+    <resourceUri>HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_PAR</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="CN_N" joinType="inner">
+    <viewAttributes>
+      <viewAttribute id="RUBRIC"/>
+      <viewAttribute id="BEGDA"/>
+      <viewAttribute id="ENDDA"/>
+      <viewAttribute id="KTOPL"/>
+      <viewAttribute id="SAKNR"/>
+      <viewAttribute id="KOKRS"/>
+      <viewAttribute id="KOSTL"/>
+      <viewAttribute id="PRCTR"/>
+      <viewAttribute id="BUKRS"/>
+      <viewAttribute id="BRANCH"/>
+      <viewAttribute id="WERKS"/>
+      <viewAttribute id="AUART"/>
+      <viewAttribute id="DZTERM"/>
+      <viewAttribute id="KAPPL"/>
+      <viewAttribute id="KSCHL"/>
+      <viewAttribute id="MATNR"/>
+      <viewAttribute id="SHKZG"/>
+      <viewAttribute id="CLASS"/>
+      <viewAttribute id="UMSKZ"/>
+      <viewAttribute id="SHKZG_1"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC">
+      <mapping xsi:type="Calculation:AttributeMapping" target="RUBRIC" source="RUBRIC"/>
+    </input>
+    <input node="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_PAR">
+      <mapping xsi:type="Calculation:AttributeMapping" target="BEGDA" source="BEGDA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ENDDA" source="ENDDA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KTOPL" source="KTOPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAKNR" source="SAKNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KOKRS" source="KOKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KOSTL" source="KOSTL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRCTR" source="PRCTR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BRANCH" source="BRANCH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WERKS" source="WERKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUART" source="AUART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DZTERM" source="DZTERM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SHKZG" source="SHKZG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CLASS" source="CLASS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="UMSKZ" source="UMSKZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SHKZG_1" source="SHKZG_1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="RUBRIC" source="RUBRIC"/>
+    </input>
+    <joinAttribute name="RUBRIC"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="RUBRIC" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RUBRIC"/>
+      <keyMapping columnObjectName="Join_1" columnName="RUBRIC"/>
+    </attribute>
+    <attribute id="BEGDA" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BEGDA"/>
+      <keyMapping columnObjectName="Join_1" columnName="BEGDA"/>
+    </attribute>
+    <attribute id="ENDDA" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENDDA"/>
+      <keyMapping columnObjectName="Join_1" columnName="ENDDA"/>
+    </attribute>
+    <attribute id="KTOPL" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KTOPL"/>
+      <keyMapping columnObjectName="Join_1" columnName="KTOPL"/>
+    </attribute>
+    <attribute id="SAKNR" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SAKNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="SAKNR"/>
+    </attribute>
+    <attribute id="KOKRS" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOKRS"/>
+      <keyMapping columnObjectName="Join_1" columnName="KOKRS"/>
+    </attribute>
+    <attribute id="KOSTL" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOSTL"/>
+      <keyMapping columnObjectName="Join_1" columnName="KOSTL"/>
+    </attribute>
+    <attribute id="PRCTR" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRCTR"/>
+      <keyMapping columnObjectName="Join_1" columnName="PRCTR"/>
+    </attribute>
+    <attribute id="BUKRS" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS"/>
+      <keyMapping columnObjectName="Join_1" columnName="BUKRS"/>
+    </attribute>
+    <attribute id="BRANCH" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BRANCH"/>
+      <keyMapping columnObjectName="Join_1" columnName="BRANCH"/>
+    </attribute>
+    <attribute id="WERKS" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WERKS"/>
+      <keyMapping columnObjectName="Join_1" columnName="WERKS"/>
+    </attribute>
+    <attribute id="AUART" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUART"/>
+      <keyMapping columnObjectName="Join_1" columnName="AUART"/>
+    </attribute>
+    <attribute id="DZTERM" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DZTERM"/>
+      <keyMapping columnObjectName="Join_1" columnName="DZTERM"/>
+    </attribute>
+    <attribute id="KAPPL" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAPPL"/>
+      <keyMapping columnObjectName="Join_1" columnName="KAPPL"/>
+    </attribute>
+    <attribute id="KSCHL" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSCHL"/>
+      <keyMapping columnObjectName="Join_1" columnName="KSCHL"/>
+    </attribute>
+    <attribute id="MATNR" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="MATNR"/>
+    </attribute>
+    <attribute id="SHKZG" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SHKZG"/>
+      <keyMapping columnObjectName="Join_1" columnName="SHKZG"/>
+    </attribute>
+    <attribute id="CLASS" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CLASS"/>
+      <keyMapping columnObjectName="Join_1" columnName="CLASS"/>
+    </attribute>
+    <attribute id="UMSKZ" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UMSKZ"/>
+      <keyMapping columnObjectName="Join_1" columnName="UMSKZ"/>
+    </attribute>
+    <attribute id="SHKZG_1" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SHKZG_1"/>
+      <keyMapping columnObjectName="Join_1" columnName="SHKZG_1"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="181"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="479.13671875"/>
+    </shape>
+    <shape modelObjectName="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_PAR" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="510.255859375"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

@@ -9,7 +9,7 @@
   </DataSource>
 </dataSources>
 <calculationViews>
-  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1" filterExpressionLanguage="COLUMN_ENGINE">
     <viewAttributes>
       <viewAttribute id="KOSTL"/>
       <viewAttribute id="DATBI"/>
@@ -21,10 +21,9 @@
       </calculatedViewAttribute>
     </calculatedViewAttributes>
     <restrictedViewAttributes/>
-    <input node="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_CSKS"/>
-  </calculationView>
+    <input node="HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_CSKS"/></calculationView>
 </calculationViews>
-<logicalModel id="Projection_1">
+<logicalModel id="Projection_1" filterExpressionLanguage="COLUMN_ENGINE">
   <attributes>
     <attribute id="KOSTL" order="1" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="KOSTL"/>
@@ -47,6 +46,8 @@
   <baseMeasures/>
   <calculatedMeasures/>
   <restrictedMeasures/>
+
+  <filter>&quot;DATBI&quot; &gt;= &quot;data&quot; AND &quot;DATAB&quot; &lt;= &quot;data&quot;</filter>
 </logicalModel>
 <layout>
   <shapes>
