@@ -1,0 +1,29 @@
+namespace HANA_IFOOD.db.data;
+
+	@Comment : 'Google Meet'
+	entity GoogleMeet {
+		conference_id:		String(100);
+		c_time: 			String(100);
+		calendar_event_id:	String(100);
+		c_email:			String(100);
+		organizer_email:	String(100);
+		display_name:		String(100);
+		duration_seconds:	String(100);		
+		audio_recv_seconds: String(100);
+		audio_send_seconds: String(100);
+		video_recv_seconds: String(100);
+		video_send_seconds: String(100);		
+		c_applicationName:	String(100);
+		c_callerType:		String(100);
+		c_customerId:		String(100);
+		c_customerId2:		String(100);
+		device_type:		String(100);
+		end_of_call_rating: String(100);
+		identifier: 		String(100);
+		identifier_type:	String(100);
+		location_country:	String(100);
+		location_region:	String(100);
+	}
+    technical configuration {
+        column store;
+    };
