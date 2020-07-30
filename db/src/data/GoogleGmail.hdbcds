@@ -1,0 +1,24 @@
+namespace HANA_IFOOD.db.data;
+
+	@Comment : 'Google Gmail'
+	entity GoogleGmail {
+		MessageID                :String(500);
+		Startdate                :String(500);
+		Enddate                  :String(500);
+		Sender                   :String(500);
+		Messagesize              :String(500);
+		Subject                  :String(1000);
+		Direction                :String(500);
+		Attachments              :String(500);
+		Recipient_address        :String(500);
+		Event_target             :String(500);
+		Event_date               :String(500);
+		Event_status             :String(500);
+		Event_target_IP_address  :String(500);
+		Has_encryption           :String(500);
+		Event_SMTP_reply_code    :String(500);
+		Event_description        :String(500);
+	}
+    technical configuration {
+        column store;
+    };
