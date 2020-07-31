@@ -12,7 +12,7 @@ try {
 	
 	var body = "";
 	
-	if ( offset === 0 ) {
+	if ( offset === "0" ) {
 		body = body + "conference_id" + "|" ;
 		body = body + "c_time" + "|" ;
 		body = body + "calendar_event_id" + "|" ;
