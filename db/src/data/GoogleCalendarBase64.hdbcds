@@ -1,0 +1,10 @@
+namespace HANA_IFOOD.db.data;
+
+	@Comment : 'Google Calendar Base64'
+	entity GoogleCalendarBase64 {
+		c_id:   		    	String(500);
+		c_base64:				LargeString;
+	}
+    technical configuration {
+        column store;
+    };
