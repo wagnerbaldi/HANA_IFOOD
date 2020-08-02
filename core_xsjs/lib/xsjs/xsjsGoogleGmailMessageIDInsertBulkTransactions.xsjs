@@ -5,7 +5,7 @@ try {
 	var jobj = JSON.parse($.request.body.asString());
 	
 	var conn = $.db.getConnection();
-	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleGmail\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)" ;
+	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleGmailMessageID\" VALUES( ?,?)" ;
 	var st = conn.prepareStatement(sqlstmt);
 
     st.setBatchSize(jobj.root.event.length);
@@ -15,22 +15,7 @@ try {
 
 		st.setString(1,jobj.root.event[i].Email);
 		st.setString(2,jobj.root.event[i].MessageID);
-		st.setString(3,jobj.root.event[i].Startdate);
-		st.setString(4,jobj.root.event[i].Enddate);
-		st.setString(5,jobj.root.event[i].Sender);
-		st.setString(6,jobj.root.event[i].Messagesize);
-		st.setString(7,jobj.root.event[i].Subject);
-		st.setString(8,jobj.root.event[i].Direction);
-		st.setString(9,jobj.root.event[i].Attachments);
-		st.setString(10,jobj.root.event[i].Recipient_address);
-		st.setString(11,jobj.root.event[i].Event_target);
-		st.setString(12,jobj.root.event[i].Event_date);
-		st.setString(13,jobj.root.event[i].Event_status);
-		st.setString(14,jobj.root.event[i].Event_target_IP_address);
-		st.setString(15,jobj.root.event[i].Has_encryption);
-		st.setString(16,jobj.root.event[i].Event_SMTP_reply_code);
-		st.setString(17,jobj.root.event[i].Event_description);
-		
+
 		st.addBatch();
     }
     if (count === true) {

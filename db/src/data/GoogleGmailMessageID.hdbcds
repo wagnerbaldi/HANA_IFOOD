@@ -1,0 +1,10 @@
+namespace HANA_IFOOD.db.data;
+
+	@Comment : 'Google Gmail MessageID'
+	entity GoogleGmailMessageID {
+		Email:			String(500);
+		MessageID:		String(500);
+	}
+    technical configuration {
+        column store;
+    };

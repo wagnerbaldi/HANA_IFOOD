@@ -1,0 +1,9 @@
+namespace HANA_IFOOD.db.data;
+
+	@Comment : 'Google User'
+	entity GoogleUser {
+		Email:		String(500);
+	}
+    technical configuration {
+        column store;
+    };
