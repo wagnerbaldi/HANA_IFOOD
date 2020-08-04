@@ -5,15 +5,16 @@ try {
 	var jobj = JSON.parse($.request.body.asString());
 	
 	var conn = $.db.getConnection();
-	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleGmailMessageID\" VALUES( ? )" ;
+	sqlstmt = "UPSERT \"IFOOD\".\"HANA_IFOOD.db.data::GoogleUser\" VALUES( ? ) where \"Email\" = ? " ;
 	var st = conn.prepareStatement(sqlstmt);
 
-    st.setBatchSize(jobj.root.event.length);
+    st.setBatchSize(jobj.root.primaryEmail.length);
     
-    for ( var i in jobj.root.event)  {
+    for ( var i in jobj.root.primaryEmail)  {
         count = true;
 
-		st.setString(1,jobj.root.event[i].Email);
+		st.setString(1,jobj.root.primaryEmail[i]);
+		st.setString(2,jobj.root.primaryEmail[i]);
 
 		st.addBatch();
     }

@@ -5,7 +5,7 @@ try {
 	var jobj = JSON.parse($.request.body.asString());
 	
 	var conn = $.db.getConnection();
-	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleGmail\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)" ;
+	sqlstmt = "UPSERT \"IFOOD\".\"HANA_IFOOD.db.data::GoogleGmail\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) where \"Email\" = '?' and \"MessageID\" = '?' " ;
 	var st = conn.prepareStatement(sqlstmt);
 
     st.setBatchSize(jobj.root.event.length);
@@ -30,6 +30,9 @@ try {
 		st.setString(15,jobj.root.event[i].Has_encryption);
 		st.setString(16,jobj.root.event[i].Event_SMTP_reply_code);
 		st.setString(17,jobj.root.event[i].Event_description);
+		
+		st.setString(18,jobj.root.event[i].Email);
+		st.setString(19,jobj.root.event[i].MessageID);
 		
 		st.addBatch();
     }

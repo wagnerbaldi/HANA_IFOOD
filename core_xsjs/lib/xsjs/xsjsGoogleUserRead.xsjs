@@ -4,8 +4,9 @@
 var output = [] ;
 
 try {
+	var lastEmail = $.request.headers.get('lastEmail');
 	var conn = $.hdb.getConnection();
-	var query = "select * from \"IFOOD\".\"HANA_IFOOD.db.data::GoogleUser\" order by \"Email\" ";
+	var query = "select * from \"IFOOD\".\"HANA_IFOOD.db.data::GoogleUser\" where \"Email\" >= '"+ lastEmail +"' order by \"Email\" ";
 	var rs = conn.executeQuery(query);
 
 	$.response.contentType = "application/json";
