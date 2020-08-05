@@ -58,7 +58,7 @@
     <restrictedViewAttributes/>
     <input node="HANA_IFOOD.db.models::CVD_ACDOCA"/>
   </calculationView>
-  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="C1_N" dynamic="false" joinType="inner" filterExpressionLanguage="SQL">
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="C1_N" dynamic="false" joinType="inner">
     <viewAttributes>
       <viewAttribute id="BELNR"/>
       <viewAttribute id="BUKRS"/>
@@ -114,7 +114,140 @@
   </calculationView>
 </calculationViews>
 <logicalModel id="Join_1">
-  <attributes/>
+  <attributes>
+    <attribute id="UMSKZ" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UMSKZ"/>
+      <keyMapping columnObjectName="Join_1" columnName="UMSKZ"/>
+    </attribute>
+    <attribute id="BELNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BELNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="BELNR"/>
+    </attribute>
+    <attribute id="BUKRS" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS"/>
+      <keyMapping columnObjectName="Join_1" columnName="BUKRS"/>
+    </attribute>
+    <attribute id="GJAHR" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GJAHR"/>
+      <keyMapping columnObjectName="Join_1" columnName="GJAHR"/>
+    </attribute>
+    <attribute id="XBLNR" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XBLNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="XBLNR"/>
+    </attribute>
+    <attribute id="MANDT" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_1" columnName="MANDT"/>
+    </attribute>
+    <attribute id="BUDAT" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUDAT"/>
+      <keyMapping columnObjectName="Join_1" columnName="BUDAT"/>
+    </attribute>
+    <attribute id="WAERS" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WAERS"/>
+      <keyMapping columnObjectName="Join_1" columnName="WAERS"/>
+    </attribute>
+    <attribute id="AWTYP" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AWTYP"/>
+      <keyMapping columnObjectName="Join_1" columnName="AWTYP"/>
+    </attribute>
+    <attribute id="BRNCH" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BRNCH"/>
+      <keyMapping columnObjectName="Join_1" columnName="BRNCH"/>
+    </attribute>
+    <attribute id="XREF1_HD" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREF1_HD"/>
+      <keyMapping columnObjectName="Join_1" columnName="XREF1_HD"/>
+    </attribute>
+    <attribute id="XREF2_HD" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XREF2_HD"/>
+      <keyMapping columnObjectName="Join_1" columnName="XREF2_HD"/>
+    </attribute>
+    <attribute id="BLART" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BLART"/>
+      <keyMapping columnObjectName="Join_1" columnName="BLART"/>
+    </attribute>
+    <attribute id="RBUKRS" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RBUKRS"/>
+      <keyMapping columnObjectName="Join_1" columnName="RBUKRS"/>
+    </attribute>
+    <attribute id="GJAHR_1" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GJAHR_1"/>
+      <keyMapping columnObjectName="Join_1" columnName="GJAHR_1"/>
+    </attribute>
+    <attribute id="BELNR_1" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BELNR_1"/>
+      <keyMapping columnObjectName="Join_1" columnName="BELNR_1"/>
+    </attribute>
+    <attribute id="DOCLN" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DOCLN"/>
+      <keyMapping columnObjectName="Join_1" columnName="DOCLN"/>
+    </attribute>
+    <attribute id="RYEAR" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RYEAR"/>
+      <keyMapping columnObjectName="Join_1" columnName="RYEAR"/>
+    </attribute>
+    <attribute id="TSL" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TSL"/>
+      <keyMapping columnObjectName="Join_1" columnName="TSL"/>
+    </attribute>
+    <attribute id="QUANT1" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QUANT1"/>
+      <keyMapping columnObjectName="Join_1" columnName="QUANT1"/>
+    </attribute>
+    <attribute id="BSCHL" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSCHL"/>
+      <keyMapping columnObjectName="Join_1" columnName="BSCHL"/>
+    </attribute>
+    <attribute id="BSTAT" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSTAT"/>
+      <keyMapping columnObjectName="Join_1" columnName="BSTAT"/>
+    </attribute>
+    <attribute id="KTOPL" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KTOPL"/>
+      <keyMapping columnObjectName="Join_1" columnName="KTOPL"/>
+    </attribute>
+    <attribute id="GLACCOUNT_TYPE" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GLACCOUNT_TYPE"/>
+      <keyMapping columnObjectName="Join_1" columnName="GLACCOUNT_TYPE"/>
+    </attribute>
+    <attribute id="MATNR" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="MATNR"/>
+    </attribute>
+    <attribute id="WERKS" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WERKS"/>
+      <keyMapping columnObjectName="Join_1" columnName="WERKS"/>
+    </attribute>
+    <attribute id="LIFNR" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LIFNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="LIFNR"/>
+    </attribute>
+    <attribute id="KUNNR" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUNNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="KUNNR"/>
+    </attribute>
+    <attribute id="KOART" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOART"/>
+      <keyMapping columnObjectName="Join_1" columnName="KOART"/>
+    </attribute>
+    <attribute id="UMSKZ_1" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UMSKZ_1"/>
+      <keyMapping columnObjectName="Join_1" columnName="UMSKZ"/>
+    </attribute>
+    <attribute id="HBKID" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HBKID"/>
+      <keyMapping columnObjectName="Join_1" columnName="HBKID"/>
+    </attribute>
+    <attribute id="AUGBL" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUGBL"/>
+      <keyMapping columnObjectName="Join_1" columnName="AUGBL"/>
+    </attribute>
+    <attribute id="AUFNR" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="AUFNR"/>
+    </attribute>
+  </attributes>
   <calculatedAttributes/>
   <baseMeasures/>
   <calculatedMeasures/>
@@ -140,12 +273,12 @@
     </shape>
     <shape modelObjectName="Projection_1" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="20" y="30"/>
-      <rectangleSize width="143.4599609375"/>
+      <rectangleSize width="143"/>
     </shape>
     <shape modelObjectName="Projection_2" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="320" y="30"/>
-      <rectangleSize width="189.9091796875"/>
+      <rectangleSize width="189"/>
     </shape>
   </shapes>
 </layout>
-</Calculation:scenario>   
+</Calculation:scenario>
