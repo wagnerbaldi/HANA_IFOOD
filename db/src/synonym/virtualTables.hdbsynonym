@@ -82,5 +82,17 @@
       "object": "S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_PAR",
       "schema": "S4HANA_VIRTUAL_TABLES"
     }
+  },
+  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_BKPF2": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_BKPF2",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
+  },
+  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTSD_BILL_DOC": {
+    "target": {
+      "object": "S4HANA_VIRTUAL_TABLES_ZTSD_BILL_DOC",
+      "schema": "S4HANA_VIRTUAL_TABLES"
+    }
   }
 }

@@ -1,24 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="HANA_IFOOD.db.models::CVD_MONITOR_SD" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="HANA_IFOOD.db.models::CVD_MONITOR_SD" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
 <descriptions defaultDescription="CVD_MONITOR_SD"/>
 <localVariables/>
 <variableMappings/>
-<dataSources/>
-<calculationViews/>
-<logicalModel>
+<dataSources>
+  <DataSource id="HANA_IFOOD.db.models::CVD_BKPF">
+    <resourceUri>HANA_IFOOD.db.models::CVD_BKPF</resourceUri>
+  </DataSource>
+  <DataSource id="HANA_IFOOD.db.models::CVD_ACDOCA">
+    <resourceUri>HANA_IFOOD.db.models::CVD_ACDOCA</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="BELNR"/>
+      <viewAttribute id="BUKRS"/>
+      <viewAttribute id="GJAHR"/>
+      <viewAttribute id="XBLNR"/>
+      <viewAttribute id="MANDT"/>
+      <viewAttribute id="BUDAT"/>
+      <viewAttribute id="WAERS"/>
+      <viewAttribute id="AWTYP"/>
+      <viewAttribute id="BRNCH"/>
+      <viewAttribute id="XREF1_HD"/>
+      <viewAttribute id="XREF2_HD"/>
+    
+      <viewAttribute id="BLART"/></viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="HANA_IFOOD.db.models::CVD_BKPF"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_2">
+    <viewAttributes>
+      <viewAttribute id="RBUKRS"/>
+      <viewAttribute id="GJAHR"/>
+      <viewAttribute id="BELNR"/>
+      <viewAttribute id="DOCLN"/>
+      <viewAttribute id="RYEAR"/>
+      <viewAttribute id="TSL"/>
+      <viewAttribute id="QUANT1"/>
+      <viewAttribute id="BSCHL"/>
+      <viewAttribute id="BSTAT"/>
+      <viewAttribute id="KTOPL"/>
+      <viewAttribute id="GLACCOUNT_TYPE"/>
+      <viewAttribute id="MATNR"/>
+      <viewAttribute id="WERKS"/>
+      <viewAttribute id="LIFNR"/>
+      <viewAttribute id="KUNNR"/>
+      <viewAttribute id="KOART"/>
+      <viewAttribute id="UMSKZ"/>
+      <viewAttribute id="HBKID"/>
+      <viewAttribute id="AUGBL"/>
+      <viewAttribute id="AUFNR"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="HANA_IFOOD.db.models::CVD_ACDOCA"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="C1_N" dynamic="false" joinType="inner" filterExpressionLanguage="SQL">
+    <viewAttributes>
+      <viewAttribute id="BELNR"/>
+      <viewAttribute id="BUKRS"/>
+      <viewAttribute id="GJAHR"/>
+      <viewAttribute id="XBLNR"/>
+      <viewAttribute id="MANDT"/>
+      <viewAttribute id="BUDAT"/>
+      <viewAttribute id="WAERS"/>
+      <viewAttribute id="AWTYP"/>
+      <viewAttribute id="BRNCH"/>
+      <viewAttribute id="XREF1_HD"/>
+      <viewAttribute id="XREF2_HD"/>
+      <viewAttribute id="BLART"/>
+      <viewAttribute id="RBUKRS"/>
+      <viewAttribute id="GJAHR_1"/>
+      <viewAttribute id="BELNR_1"/>
+      <viewAttribute id="DOCLN"/>
+      <viewAttribute id="RYEAR"/>
+      <viewAttribute id="TSL"/>
+      <viewAttribute id="QUANT1"/>
+      <viewAttribute id="BSCHL"/>
+      <viewAttribute id="BSTAT"/>
+      <viewAttribute id="KTOPL"/>
+      <viewAttribute id="GLACCOUNT_TYPE"/>
+      <viewAttribute id="MATNR"/>
+      <viewAttribute id="WERKS"/>
+      <viewAttribute id="LIFNR"/>
+      <viewAttribute id="KUNNR"/>
+      <viewAttribute id="KOART"/>
+      <viewAttribute id="UMSKZ"/>
+      <viewAttribute id="HBKID"/>
+      <viewAttribute id="AUGBL"/>
+      <viewAttribute id="AUFNR"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Projection_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="BELNR" source="BELNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="GJAHR" source="GJAHR"/>
+    </input>
+    <input node="Projection_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="RBUKRS" source="RBUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="GJAHR_1" source="GJAHR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BELNR_1" source="BELNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BELNR" source="BELNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="RBUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="GJAHR" source="GJAHR"/>
+    </input>
+    <joinAttribute name="BELNR"/>
+    <joinAttribute name="BUKRS"/>
+    <joinAttribute name="GJAHR"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
   <attributes/>
   <calculatedAttributes/>
   <baseMeasures/>
   <calculatedMeasures/>
-  <restrictedMeasures/>
-</logicalModel>
+  <restrictedMeasures/></logicalModel>
 <layout>
   <shapes>
     <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
-      <upperLeftCorner x="92" y="112"/>
+      <upperLeftCorner x="221" y="112"/>
     
       <rectangleSize width="160"/>
     </shape>
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="376"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Projection_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="302" y="376"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="221" y="210"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Projection_1" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="143.4599609375"/>
+    </shape>
+    <shape modelObjectName="Projection_2" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="189.9091796875"/>
+    </shape>
   </shapes>
 </layout>
-</Calculation:scenario>
+</Calculation:scenario>   

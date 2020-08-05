@@ -1,0 +1,25 @@
+namespace HANA_IFOOD.db.data;
+
+	@Comment : 'Users Detail'
+	entity ZoomUsersDetail {
+		Id		                 :String(500);
+		FisrtName			     :String(500);
+		LastName			     :String(500);
+		Email				     :String(500);
+		Type                     :String(500);
+		Pmi		                 :String(500);
+		TimeZone      	         :String(500);
+		Verified                 :String(500);
+		Dept	                 :String(500);
+		CreatedAt	             :String(500);
+		LastLoginTime			 :String(500);
+		LastClientVersion        :String(500);
+		GroupIds	             :String(500);
+		Language	             :String(500);
+		PhoneNumber				 :String(500);
+		Status					 :String(500);
+		PicUrl				     :String(500);
+	}
+    technical configuration {
+        column store;
+    };

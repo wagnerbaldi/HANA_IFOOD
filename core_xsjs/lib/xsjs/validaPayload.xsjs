@@ -8,19 +8,17 @@ var isItemPartnerValido = null;
 var isItemKeyValido = null;
 
 var conn = $.hdb.getConnection();
-var cc = [ '0000010100', '0000020100' ];
+var cc = [];
 var ccParam = '';
-cc.forEach(function(entry,index) {
-    ccParam += (index == 0) ? entry : ',' + entry;
-});
+
 //Rubricas
-var query = "select RUBRIC  from \"IFOOD\".\"HANA_IFOOD.db.data::ZTCA_RUBRIC_PAR\" ";
+var query = "select RUBRIC  from  \"IFOOD\".\"HANA_IFOOD.db.data::ZTCA_RUBRIC_PAR\" ";
 var rubricas = conn.executeQuery(query);
 //Centro de custo
-/*
-query = "select KOSTL, DATBI  from \"S4HANA_VIRTUAL_TABLES\".\"S4HANA_VIRTUAL_TABLES_CSKS\"  where KOSTL IN ('"+ ccParam +"')";
-var centroLucro = conn.executeQuery(query);
-*/
+
+var query = "SELECT KOSTL,DATBI,DATAB,data FROM \"IFOOD\".\HANA_IFOOD.db.models::CVD_CSKS\" ";
+var centroCusto = conn.executeQuery(query);
+
 for (var i = 0; i < body.AccountDocsPost.length; i++) {
     mensagem.DocumentReference.push({
         "DocumentReference": body.AccountDocsPost[i].DocumentReference
@@ -31,6 +29,10 @@ for (var i = 0; i < body.AccountDocsPost.length; i++) {
 
         //Valida soma dos itens
         count += parseInt(body.AccountDocsPost[i].Items[k].Amount);
+
+//SALVA CENTROS DE CUSTOS ENVIADOS
+
+cc.push(body.AccountDocsPost[i].Items[k].CostCenter);
 
         //Valida se rubrica está cadastrada
         var pos = rubricas.map(function (r) {
@@ -78,6 +80,10 @@ for (var i = 0; i < body.AccountDocsPost.length; i++) {
         }
 
     }
+
+cc.forEach(function(entry,index) {
+    ccParam += (index == 0) ? entry : ',' + entry;
+});
 
     if (count !== 0) {
         itemMessage.push({

@@ -1,0 +1,24 @@
+namespace HANA_IFOOD.db.data;
+
+	@Comment : 'Meetings Detail'
+	entity ZoomMeetingDetail {
+		UuID	                 :String(500);
+		Id		                 :String(500);
+		HostID                   :String(500);
+		Type                     :String(500);
+		Topic       	         :String(1000);
+		UserName                 :String(500);
+		UserEmail                :String(500);
+		StartTime	             :String(500);
+		EndTime     			 :String(500);
+		Duration	             :String(500);
+		TotalMinutes             :String(500);
+		ParticipantsCount        :String(500);
+		Dept					 :String(500);
+		JoinUrl					 :String(500);
+		CreatedAt				 :String(500);
+		Timezone				 :String(500);
+	}
+    technical configuration {
+        column store;
+    };
