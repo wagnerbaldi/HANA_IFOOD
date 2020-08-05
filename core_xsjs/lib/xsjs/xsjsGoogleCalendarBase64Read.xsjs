@@ -5,7 +5,7 @@ var output = [] ;
 
 
 var conn = $.hdb.getConnection();
-var query = "select \"c_id\", \"c_base64\" from \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendarBase64\" ";
+var query = "select \"c_id\", \"c_base64\" from \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendarBase64\" order by \"c_id\" desc limit 1 ";
 var rs = conn.executeQuery(query);
 
 var body = "";

@@ -2,6 +2,7 @@ namespace HANA_IFOOD.db.data;
 
 	@Comment : 'Google Gmail'
 	entity GoogleGmail {
+		Email					 :String(500);
 		MessageID                :String(500);
 		Startdate                :String(500);
 		Enddate                  :String(500);
