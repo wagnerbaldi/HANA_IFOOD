@@ -1,23 +1,14 @@
+var count = false;
+var sqlstmt = "";
 
 try {
-	var jobj = JSON.parse($.request.body.asString());
-	
 	var conn = $.db.getConnection();
-	var sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendarBase64\" VALUES( ?,?)" ;
+	sqlstmt = "DELETE FROM \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendarTemp\"" ;
 	var st = conn.prepareStatement(sqlstmt);
-
-    st.setBatchSize(1);
-    st.setString(1,jobj.c_id);
-	st.setString(2,jobj.c_base64);
-	st.addBatch();
-	st.executeBatch();
+	st.executeQuery();
 	st.close();
-
 	conn.commit();
-
-	if (conn) {
-		conn.close();
-	}
+	conn.close();
 	
 	$.response.contentType = "text/plain";
 	$.response.setBody("OK");

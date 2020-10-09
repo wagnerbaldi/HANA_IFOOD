@@ -26,6 +26,11 @@ modules:
         properties:
           key: ServiceName_1
           service: '~{the-service-name}'
+      - name: CROSS_INTEGRATION
+        group: SERVICE_REPLACEMENTS
+        properties:
+          key: external_access
+          service: '~{ups-service-name}'
   - name: core_xsjs
     type: nodejs
     path: core_xsjs
@@ -62,3 +67,9 @@ resources:
     properties:
       the-service-name: '${service-name}'
     type: org.cloudfoundry.existing-service
+  - name: CROSS_INTEGRATION
+    type: org.cloudfoundry.existing-service
+    parameters:
+      service-name: CROSS_INTEGRATION
+    properties:
+      ups-service-name: '${service-name}'

@@ -4,14 +4,6 @@ var sqlstmt = "";
 try {
 	var jobj = JSON.parse($.request.body.asString());
 	
-	/*
-	var conn_del = $.db.getConnection();
-	conn_del.prepareStatement("SET SCHEMA SALESFORCE_ONCO").execute();
-	sqlstmt = `DELETE FROM "` + tableID +  `"`;
-	var st_del = conn_del.prepareStatement(sqlstmt);
-	st_del.execute();
-	*/
-	
 	var conn = $.db.getConnection();
 	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleMeet\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)" ;
 	var st = conn.prepareStatement(sqlstmt);

@@ -1,0 +1,34 @@
+namespace HANA_IFOOD.db.data;
+
+	@Comment : 'Google Calendar Temporary'
+	entity GoogleCalendarTemp {
+		calendar_id:			String(500);
+		calendar_title:			String(500);	
+		c_time:					String(500);
+		c_applicationName:		String(500);
+		c_customerId:			String(500);
+		c_email:				String(500);
+		c_ownerDomain:			String(500);
+		end_time:				String(500);
+		event_guest:			String(500);
+		event_id:				String(500);
+		event_name:				String(500);
+		event_response_status:	String(500);
+		event_type:				String(500);
+		grantee_email:			String(500);
+		notification_message_id:String(500);
+		notification_method:	String(500);
+		notification_type:		String(500);
+		old_event_title:		String(500);
+		organizer_calendar_id:	String(500);
+		recipient_email:		String(500);
+		start_time:				String(500);
+		subscriber_calendar_id:	String(500);
+		target_calendar_id:		String(500);
+		time_proposal_change:	String(500);
+		user_agent:				String(500);
+		c_nextPageToken:    	String(500);
+	}
+    technical configuration {
+        column store;
+    };
