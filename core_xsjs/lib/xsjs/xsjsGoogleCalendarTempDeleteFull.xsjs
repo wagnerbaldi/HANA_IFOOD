@@ -1,9 +1,7 @@
-var count = false;
-var sqlstmt = "";
 
 try {
 	var conn = $.db.getConnection();
-	sqlstmt = "DELETE FROM \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendarTemp\"" ;
+	var sqlstmt = "DELETE FROM \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendarTemp\"" ;
 	var st = conn.prepareStatement(sqlstmt);
 	st.executeQuery();
 	st.close();
