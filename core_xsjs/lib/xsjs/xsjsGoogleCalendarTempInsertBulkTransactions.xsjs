@@ -55,18 +55,12 @@ try {
 
 	st.close();
 
-    //conn_del.commit();
 	conn.commit();
 
 	if (conn) {
 		conn.close();
 	}
 	
-	/*
-	if (conn_del) {
-		conn_del.close();
-	}
-	*/
 	
 	$.response.contentType = "text/plain";
 	$.response.setBody("OK");
