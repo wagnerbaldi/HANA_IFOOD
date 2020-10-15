@@ -1,7 +1,7 @@
 namespace HANA_IFOOD.db.data;
 
-	@Comment : 'Google Meet Backup'
-	entity GoogleMeetBackup {
+	@Comment : 'Google Meeting'
+	entity GoogleMeeting {
 		conference_id:		String(500);
 		c_time: 			String(500);
 		calendar_event_id:	String(500);
