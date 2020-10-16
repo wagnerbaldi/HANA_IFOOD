@@ -11,7 +11,7 @@ try {
 	stdel.close();
 	
 	//Insert temp records into GoogleCalendar
-	var sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendar\" SELECT * FROM \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendarTemp\"" ;
+	var sqlstmt = "INSERT INTO \"INTEGRATION\".\"GoogleCalendar\" SELECT * FROM \"IFOOD\".\"HANA_IFOOD.db.data::GoogleCalendarTemp\"" ;
 	var st = conn.prepareStatement(sqlstmt);
 	st.executeQuery();
 	st.close();

@@ -7,7 +7,7 @@ try {
 	var offset = $.request.headers.get('offset');
 	var limit = $.request.headers.get('limit');
 	var conn = $.hdb.getConnection();
-	var query = "select * from \"IFOOD\".\"HANA_IFOOD.db.data::GoogleMeeting\" order by \"c_time\", \"c_nextPageToken\", \"conference_id\" limit " + limit  +" offset " + offset;
+	var query = "select * from \"INTEGRATION\".\"GoogleMeeting\" order by \"c_time\", \"c_nextPageToken\", \"conference_id\" limit " + limit  +" offset " + offset;
 	var rs = conn.executeQuery(query);
 	
 	var body = "";

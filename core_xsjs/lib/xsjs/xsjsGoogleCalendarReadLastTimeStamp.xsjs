@@ -5,7 +5,7 @@ var output = [] ;
 
 try {
 	var conn = $.hdb.getConnection();
-	var query = `select top 1 "c_time" from "IFOOD"."HANA_IFOOD.db.data::GoogleCalendar" order by "c_time" desc`;
+	var query = `select top 1 "c_time" from "INTEGRATION"."GoogleCalendar" order by "c_time" desc`;
 	var rs = conn.executeQuery(query);
 	
 	for ( var line of rs ) {
