@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="HANA_IFOOD.db.models::CVD_GoogleMeetingIntegracao" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CVD_GoogleMeetingIntegracao"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="HANA_IFOOD.db.models::GoogleMeeting">
+    <resourceUri>HANA_IFOOD.db.models::GoogleMeeting</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="conference_id"/>
+      <viewAttribute id="c_time"/>
+      <viewAttribute id="c_email"/>
+      <viewAttribute id="display_name"/>
+    </viewAttributes>
+    <calculatedViewAttributes>
+      <calculatedViewAttribute id="CC_1" datatype="VARCHAR" length="500" expressionLanguage="COLUMN_ENGINE">
+        <formula>&quot;conference_id&quot;+&quot;c_time&quot;+&quot;c_email&quot;+&quot;display_name&quot;</formula>
+      </calculatedViewAttribute>
+    </calculatedViewAttributes>
+    <restrictedViewAttributes/>
+    <input node="HANA_IFOOD.db.models::GoogleMeeting">
+      <mapping xsi:type="Calculation:AttributeMapping" target="conference_id" source="conference_id"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="c_time" source="c_time"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="c_email" source="c_email"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="display_name" source="display_name"/>
+    </input>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_2">
+    <viewAttributes>
+      <viewAttribute id="CC_1"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Projection_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="CC_1" source="CC_1"/>
+    </input>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Projection_2">
+  <attributes>
+    <attribute id="CC_1" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CC_1"/>
+      <keyMapping columnObjectName="Projection_2" columnName="CC_1"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="-176" y="155"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Projection_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="-211" y="8"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
