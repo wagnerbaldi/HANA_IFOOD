@@ -1,0 +1,8 @@
+{
+  "HANA_IFOOD.db.models::GoogleMeeting": {
+    "target": {
+      "object": "GoogleMeeting",
+      "schema": "INTEGRATION"
+    }
+  }
+}

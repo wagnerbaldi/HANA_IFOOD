@@ -1,0 +1,17 @@
+{
+  "CROSS_INTEGRATION": {
+    "object_owner" : [
+        {
+    		"roles" : ["CCROLE" ]
+    	},
+        {
+          "name" : "LocalFile",
+          "type" : "REMOTE SOURCE",
+          "privileges" : [ "CREATE VIRTUAL TABLE", "DROP", "CREATE REMOTE SUBSCRIPTION", "PROCESS REMOTE SUBSCRITPION EXCEPTION" ]
+        }
+      ],
+    "application_user" : {
+      "roles" : ["CCROLE" ]
+    }
+  }
+}

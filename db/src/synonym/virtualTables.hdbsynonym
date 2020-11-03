@@ -11,45 +11,9 @@
       "schema": "S4HANA_VIRTUAL_TABLES"
     }
   },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_SKA1": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_SKA1",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_BUT000": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_BUT000",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_BUT0ID": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_BUT0ID",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
   "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_CSKS": {
     "target": {
       "object": "S4HANA_VIRTUAL_TABLES_CSKS",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_CEPC": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_CEPC",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_J_1BBRANCH": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_J_1BBRANCH",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTSD_TY_DOC_RUB": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_ZTSD_TY_DOC_RUB",
       "schema": "S4HANA_VIRTUAL_TABLES"
     }
   },
@@ -59,39 +23,9 @@
       "schema": "S4HANA_VIRTUAL_TABLES"
     }
   },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_TXT": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_TXT",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_CLAS": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_CLAS",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTSD_COMP_RUBRIC": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_ZTSD_COMP_RUBRIC",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
   "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_PAR": {
     "target": {
       "object": "S4HANA_VIRTUAL_TABLES_ZTCA_RUBRIC_PAR",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_BKPF2": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_BKPF2",
-      "schema": "S4HANA_VIRTUAL_TABLES"
-    }
-  },
-  "HANA_IFOOD.db.synonym::S4HANA_VIRTUAL_TABLES_ZTSD_BILL_DOC": {
-    "target": {
-      "object": "S4HANA_VIRTUAL_TABLES_ZTSD_BILL_DOC",
       "schema": "S4HANA_VIRTUAL_TABLES"
     }
   }

@@ -1,7 +1,7 @@
 namespace HANA_IFOOD.db.data;
 
-	@Comment : 'Google Calendar'
-	entity GoogleCalendar {
+	@Comment : 'Google Calendar Temporary'
+	entity GoogleCalendarTemp {
 		calendar_id:			String(500);
 		calendar_title:			String(500);	
 		c_time:					String(500);
