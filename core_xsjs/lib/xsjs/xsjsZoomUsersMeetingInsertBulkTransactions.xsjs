@@ -2,7 +2,6 @@ var count = false;
 var sqlstmt = "";
 var append = "";
 
-
 try {
     var jobj = JSON.parse($.request.body.asString());
 
