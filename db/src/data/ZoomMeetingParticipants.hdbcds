@@ -8,6 +8,7 @@ namespace HANA_IFOOD.db.data;
 		UserEmail                :String(500);
 		
 	}
+	
     technical configuration {
         column store;
     };

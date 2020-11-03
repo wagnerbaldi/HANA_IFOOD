@@ -1,3 +1,4 @@
+
 try {
 	var conn = $.db.getConnection();
 	var sqlstmt = "DELETE FROM \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\"" ;

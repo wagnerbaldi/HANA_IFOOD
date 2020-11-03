@@ -1,5 +1,6 @@
 var header_ctime = $.request.headers.get('c_time');
 
+
 try {
 	var conn = $.db.getConnection();
 	

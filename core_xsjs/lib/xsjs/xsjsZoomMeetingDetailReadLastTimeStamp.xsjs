@@ -1,6 +1,7 @@
 "use strict";
 var output = [] ;
 
+
 try {
 	var conn = $.hdb.getConnection();
 	var query = 'select top 1 "StartTime" from  \"INTEGRATION\".\"ZoomMeetingDetail\" order by "StartTime" desc';
