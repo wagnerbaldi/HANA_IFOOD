@@ -1,77 +1,79 @@
 var count = false;
 var sqlstmt = "";
+var append = "";
+
 
 try {
-	var jobj = JSON.parse($.request.body.asString());
-	
-	/*
-	var conn_del = $.db.getConnection();
-	conn_del.prepareStatement("SET SCHEMA SALESFORCE_ONCO").execute();
-	sqlstmt = `DELETE FROM "` + tableID +  `"`;
-	var st_del = conn_del.prepareStatement(sqlstmt);
-	st_del.execute();
-	*/
-	
-	var conn = $.db.getConnection();
-	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::ZoomUsersDetail\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)" ;
-	var st = conn.prepareStatement(sqlstmt);
+    var jobj = JSON.parse($.request.body.asString());
 
-    st.setBatchSize(jobj.usermeeting.users.length);
-    
-    for ( var i in jobj.usermeeting.users)  {
-        count = true;
+    /*
+    var conn_del = $.db.getConnection();
+    conn_del.prepareStatement("SET SCHEMA SALESFORCE_ONCO").execute();
+    sqlstmt = `DELETE FROM "` + tableID +  `"`;
+    var st_del = conn_del.prepareStatement(sqlstmt);
+    st_del.execute();
+    */
 
-		st.setString(1,jobj.usermeeting.users[i].id);
-		st.setString(2,jobj.usermeeting.users[i].first_name );
-		st.setString(3,jobj.usermeeting.users[i].last_name);
-		st.setString(4,jobj.usermeeting.users[i].email);
-		st.setString(5,jobj.usermeeting.users[i].type);
-		st.setString(6,jobj.usermeeting.users[i].pmi);
-		st.setString(7,jobj.usermeeting.users[i].timezone);
-		st.setString(8,jobj.usermeeting.users[i].verified);
-		st.setString(9,jobj.usermeeting.users[i].dept);
-		st.setString(10,jobj.usermeeting.users[i].created_at);
-		st.setString(11,jobj.usermeeting.users[i].last_login_time);
-		st.setString(12,jobj.usermeeting.users[i].last_client_version);
-		st.setString(13,jobj.usermeeting.users[i].group_ids);
-		st.setString(14,jobj.usermeeting.users[i].language);
-		st.setString(15,jobj.usermeeting.users[i].phone_number);
-		st.setString(16,jobj.usermeeting.users[i].status);
-		st.setString(17,jobj.usermeeting.users[i].pic_url);
-		
-			st.addBatch();
-    }
-    if (count === true) {
+    var conn = $.db.getConnection();
+    sqlstmt = "UPSERT \"IFOOD\".\"HANA_IFOOD.db.data::ZoomUsersDetail\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) WHERE \"Id\" =?"; 
+    var st = conn.prepareStatement(sqlstmt);
+
+    st.setBatchSize(jobj.users.length);
+
+    count = true;
+    for ( var x  in jobj.users){
+        st.setString(1, jobj.users[x].id);
+        st.setString(2, jobj.users[x].first_name);
+        st.setString(3, jobj.users[x].last_name);
+        st.setString(4, jobj.users[x].email);
+        st.setString(5, jobj.users[x].type);
+        st.setString(6, jobj.users[x].pmi);
+        st.setString(7, jobj.users[x].timezone);
+        st.setString(8, jobj.users[x].verified);
+        st.setString(9, jobj.users[x].dept);
+        st.setString(10, jobj.users[x].created_at);
+        st.setString(11, jobj.users[x].last_login_time);
+        st.setString(12, jobj.users[x].last_client_version);
+        st.setString(13, jobj.users[x].group_ids);
+        st.setString(14, jobj.users[x].language);
+        st.setString(15, jobj.users[x].phone_number);
+        st.setString(16, jobj.users[x].status);
+        st.setString(17, jobj.users[x].pic_url);
+        st.setString(18, jobj.users[x].id);
+                   st.addBatch();
+      }
+		   if (count === true) {
 			st.executeBatch();
 	}
 
-	st.close();
+        
+    st.close();
 
     //conn_del.commit();
-	conn.commit();
+    conn.commit();
 
-	if (conn) {
-		conn.close();
-	}
-	
-	/*
-	if (conn_del) {
-		conn_del.close();
-	}
-	*/
-	
-	$.response.contentType = "text/plain";
-	$.response.setBody("OK");
-	$.response.status = $.net.http.OK;
-	
+    if (conn) {
+        conn.close();
+    }
+
+    /*
+    if (conn_del) {
+    	conn_del.close();
+    }
+    */
+
+    $.response.contentType = "text/plain";
+    $.response.setBody("OK");
+    $.response.status = $.net.http.OK;
+
 } catch (e) {
-	var tobjerr = {};
+    var tobjerr = {};
 
-	tobjerr.status = $.net.http.INTERNAL_SERVER_ERROR;
-	tobjerr.message = e.message;
-	tobjerr.description = e.message;
+    tobjerr.status = $.net.http.INTERNAL_SERVER_ERROR;
+    tobjerr.message = e.message;
+    tobjerr.description = e.message;
 
-	$.response.contentType = "text/plain";
-	$.response.status = $.net.http.INTERNAL_SERVER_ERROR;
-	$.response.setBody(e.message);
+    $.response.contentType = "text/plain";
+    $.response.status = $.net.http.INTERNAL_SERVER_ERROR;
+    $.response.setBody(e.message);
 }

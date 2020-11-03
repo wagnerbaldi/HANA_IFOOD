@@ -12,7 +12,7 @@ try {
 	
 	var body = "";
 	
-	if ( offset === 0 ) {
+	if ( offset === "0" ) {
 		body = body + "UuID"	        	+ "|";
 		body = body + "Id"		        	+ "|";
 		body = body + "HostID"          	+ "|";
@@ -24,8 +24,7 @@ try {
 		body = body + "EndTime"     		+ "|";
 		body = body + "Duration"	    	+ "|";
 		body = body + "TotalMinutes"      	+ "|";
-		body = body + "ParticipantsCount" 	+ "|";
-		body = body + "Dept"			  	+ "\n";
+		body = body + "ParticipantsCount" 	+ "\n";
 	}
 		
 	var numberReg = false;
@@ -45,8 +44,7 @@ try {
 		body = body + lines.EndTime     	   + "|";
 		body = body + lines.Duration	       + "|";
 		body = body + lines.TotalMinutes       + "|";
-		body = body + lines.ParticipantsCount  + "|";
-		body = body + lines.Dept			   + "\n"; 
+		body = body + lines.ParticipantsCount  + "\n";
 	}
 	
 	if ( numberReg === true ) {

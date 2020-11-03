@@ -13,26 +13,27 @@ try {
 	*/
 	
 	var conn = $.db.getConnection();
-	sqlstmt = "UPSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetail2\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?) where uuid =? and id =?";
+	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?)";
 	var st = conn.prepareStatement(sqlstmt);
 
-    st.setBatchSize(jobj.meetings.root.length);
+    st.setBatchSize(jobj.Meetings.Meeting.length);
     
-    for ( var i in jobj.meetings.root)  {
+    for ( var i in jobj.Meetings.Meeting)  {
         count = true;
 
-		st.setString(1,jobj.meetings.root[i].uuid);
-		st.setString(2,jobj.meetings.root[i].id );
-		st.setString(3,jobj.meetings.root[i].host_id);
-		st.setString(4,jobj.meetings.root[i].type);
-		st.setString(5,jobj.meetings.root[i].topic);
-		st.setString(6,jobj.meetings.root[i].user_name);
-		st.setString(7,jobj.meetings.root[i].user_email);
-		st.setString(8,jobj.meetings.root[i].start_time);
-		st.setString(9,jobj.meetings.root[i].end_time);
-		st.setString(10,jobj.meetings.root[i].duration);
-		st.setString(11,jobj.meetings.root[i].total_minutes);
-		st.setString(12,jobj.meetings.root[i].participants_count);
+		st.setString(1,jobj.Meetings.Meeting[i].uuid);
+		st.setString(2,jobj.Meetings.Meeting[i].id );
+		st.setString(3,jobj.Meetings.Meeting[i].host_id);
+		st.setString(4,jobj.Meetings.Meeting[i].type);
+		st.setString(5,jobj.Meetings.Meeting[i].topic);
+		st.setString(6,jobj.Meetings.Meeting[i].user_name);
+		st.setString(7,jobj.Meetings.Meeting[i].user_email);
+		st.setString(8,jobj.Meetings.Meeting[i].start_time);
+		st.setString(9,jobj.Meetings.Meeting[i].end_time);
+		st.setString(10,jobj.Meetings.Meeting[i].duration);
+		st.setString(11,jobj.Meetings.Meeting[i].total_minutes);
+		st.setString(12,jobj.Meetings.Meeting[i].participants_count);
+		st.setString(13,jobj.Meetings.Meeting[i].dept);
 		
 		st.addBatch();
     }

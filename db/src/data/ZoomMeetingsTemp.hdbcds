@@ -1,7 +1,7 @@
 namespace HANA_IFOOD.db.data;
 
-	@Comment : 'Meetings Detail'
-	entity ZoomMeetingDetail {
+	@Comment : 'Meetings Detail Temp'
+	entity ZoomMeetingDetailTemp {
 		UuID	                 :String(500);
 		Id		                 :String(500);
 		HostID                   :String(500);
@@ -14,7 +14,7 @@ namespace HANA_IFOOD.db.data;
 		Duration	             :String(500);
 		TotalMinutes             :String(500);
 		ParticipantsCount        :String(500);
-		Dept					 :String(500);
+		Dept			         :String(500);
 	}
     technical configuration {
         column store;

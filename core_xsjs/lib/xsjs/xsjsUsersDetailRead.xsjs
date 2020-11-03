@@ -7,12 +7,12 @@ try {
 	var offset = $.request.headers.get('offset');
 	var limit = $.request.headers.get('limit');
 	var conn = $.hdb.getConnection();
-	var query = "select * from \"IFOOD\".\"HANA_IFOOD.db.data::ZoomUsersDetail\" order by \"id\" limit " + limit  +" offset " + offset;
+	var query = "select * from \"IFOOD\".\"HANA_IFOOD.db.data::ZoomUsersDetail\" order by \"Id\" limit " + limit  +" offset " + offset;
 	var rs = conn.executeQuery(query);
 	
 	var body = "";
 	
-	if ( offset === 0 ) {
+	if ( offset === "0" ) {
 		body = body + "Id"					+ "|" ;
 		body = body + "FisrtName"			+ "|" ;
 		body = body + "LastName"			+ "|" ;
@@ -29,9 +29,8 @@ try {
 		body = body + "Language"	    	+ "|" ;
 		body = body + "PhoneNumber"			+ "|" ;
 		body = body + "Status"				+ "|" ;
-		body = body + "MeetingUUid"			+ "|" ;
-		body = body + "MeetingID"			+ "|" ;
-		body = body + "JoinUrl"				+ "\n" ;
+		body = body + "PicUrl"				+ "\n";
+	
 	}
 		
 	var numberReg = false;
@@ -56,9 +55,7 @@ try {
 		body = body + lines.Language	       + "|";
 		body = body + lines.PhoneNumber		   + "|";
 		body = body + lines.Status			   + "|";
-		body = body + lines.MeetingUUid		   + "|";
-		body = body + lines.MeetingID		   + "|";
-		body = body + lines.JoinUrl			   + "\n" ;  
+		body = body + lines.PicUrl			   + "\n";
 	}
 	
 	if ( numberReg === true ) {
