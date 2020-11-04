@@ -12,7 +12,7 @@ try {
 	var jobj = JSON.parse($.request.body.asString());
 	
 	var conn = $.db.getConnection();
-	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleMeetingTemp\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)" ;
+	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::GoogleMeetingTemp\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)" ;
 	var st = conn.prepareStatement(sqlstmt);
 
     st.setBatchSize(jobj.root.event.length);
@@ -42,6 +42,7 @@ try {
 		st.setString(20,checkUndefined(jobj.root.event[i].location_country));
 		st.setString(21,checkUndefined(jobj.root.event[i].location_region));
 		st.setString(22,checkUndefined(jobj.root.event[i].c_nextPageToken));
+		st.setInteger(23,0);
 		
 		st.addBatch();
     }

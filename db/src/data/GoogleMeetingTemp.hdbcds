@@ -24,6 +24,7 @@ namespace HANA_IFOOD.db.data;
 		location_country:	String(500);
 		location_region:	String(500);
 		c_nextPageToken:    String(500);
+		ID:					Integer;
 	}
     technical configuration {
         column store;
