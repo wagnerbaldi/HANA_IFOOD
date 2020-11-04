@@ -28,7 +28,7 @@ namespace HANA_IFOOD.db.data;
 		time_proposal_change:	String(500);
 		user_agent:				String(500);
 		c_nextPageToken:    	String(500);
-		ID:						Integer;
+		ID:						Integer64;
 	}
     technical configuration {
         column store;
