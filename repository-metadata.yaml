@@ -1,0 +1,12 @@
+apiVersion: ifood/v1beta1
+kind: Repository
+metadata:
+  costCenter: unknown
+  tribe: unknown
+  squad: unknown
+  channel: unknown
+  alias: unknown
+  email: ivan.lima@ifood.com.br
+  owner: ivan.lima
+spec:
+  contents: []
