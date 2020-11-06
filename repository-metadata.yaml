@@ -4,9 +4,10 @@ metadata:
   costCenter: unknown
   tribe: unknown
   squad: unknown
-  channel: unknown
-  alias: unknown
-  email: ivan.lima@ifood.com.br
-  owner: ivan.lima
+  team:
+    channel: unknown
+    alias: unknown
+    owner: ivan.lima
+    email: ivan.lima@ifood.com.br
 spec:
   contents: []
