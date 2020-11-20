@@ -15,6 +15,7 @@ namespace HANA_IFOOD.db.data;
 		TotalMinutes             :String(500);
 		ParticipantsCount        :String(500);
 		Dept			         :String(500);
+		IdPrimary				 :Integer64;
 	}
 	
     technical configuration {

@@ -14,7 +14,7 @@ try {
 	*/
 	
 	var conn = $.db.getConnection();
-	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	sqlstmt = "INSERT INTO \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\" VALUES( ?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 	var st = conn.prepareStatement(sqlstmt);
 
     st.setBatchSize(jobj.Meetings.Meeting.length);
@@ -35,6 +35,7 @@ try {
 		st.setString(11,jobj.Meetings.Meeting[i].total_minutes);
 		st.setString(12,jobj.Meetings.Meeting[i].participants_count);
 		st.setString(13,jobj.Meetings.Meeting[i].dept);
+		st.setInteger(14,0);
 		
 		st.addBatch();
     }
