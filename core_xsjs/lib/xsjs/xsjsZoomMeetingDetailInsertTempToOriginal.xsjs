@@ -12,7 +12,7 @@ try {
 	stdel.close();
 	}
 	// //Insert temp records into MeetingDetail
-	var sqlstmt = "INSERT INTO \"INTEGRATION\".\"ZoomMeetingDetail\" SELECT * FROM \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\"" ;
+	var sqlstmt = "INSERT INTO \"INTEGRATION\".\"ZoomMeetingDetail\" SELECT DISTINCT * FROM \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\"" ;
 	var st = conn.prepareStatement(sqlstmt);
 	st.executeQuery();
 	st.close();
