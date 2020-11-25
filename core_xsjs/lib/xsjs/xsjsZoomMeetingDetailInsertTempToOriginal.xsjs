@@ -5,12 +5,12 @@ try {
 	var conn = $.db.getConnection();
 	
 	// Delete duplicate timestamp records
-	// if	(header_ctime != "undefined"){
-	// var	sqldele = "DELETE FROM \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\" where \"StartTime\" <= '" + header_ctime + "'" ;
-	// var stdel = conn.prepareStatement(sqldele);
-	// stdel.executeQuery();
-	// stdel.close();
-	// }
+	if	(header_ctime != "undefined"){
+	var	sqldele = "DELETE FROM \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\" where \"StartTime\" <= '" + header_ctime + "'" ;
+	var stdel = conn.prepareStatement(sqldele);
+	stdel.executeQuery();
+	stdel.close();
+	}
 	// //Insert temp records into MeetingDetail
 	var sqlstmt = "INSERT INTO \"INTEGRATION\".\"ZoomMeetingDetail\" ( \"UuID\", \"Id\", \"HostID\", \"Type\", \"Topic\", \"UserName\", \"UserEmail\", \"StartTime\", \"EndTime\", \"Duration\", \"TotalMinutes\", \"ParticipantsCount\", \"Dept\" ) SELECT DISTINCT \"UuID\", \"Id\", \"HostID\", \"Type\", \"Topic\", \"UserName\", \"UserEmail\", \"StartTime\", \"EndTime\", \"Duration\", \"TotalMinutes\", \"ParticipantsCount\", \"Dept\" FROM \"IFOOD\".\"HANA_IFOOD.db.data::ZoomMeetingDetailTemp\" ";
 	var st = conn.prepareStatement(sqlstmt);
