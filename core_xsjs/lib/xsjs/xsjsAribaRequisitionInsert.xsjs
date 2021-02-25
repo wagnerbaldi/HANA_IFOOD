@@ -9,7 +9,8 @@ try {
 	sqlstmt = "INSERT INTO \"INTEGRATION\".\"ARIBA_REQUISITION\" (\"APPROVEDSTATE\",\"SOURCINGSTATUS\", \"INITIALUNIQUENAME\", \"NAME\") VALUES( ?,?,?,?) ";
 	var st = conn.prepareStatement(sqlstmt);
 
-    st.setBatchSize(jobj.Records.length);
+    /*
+	st.setBatchSize(jobj.Records.length);
     
 	for ( var k in jobj.Records) {
 		count = true;
@@ -23,7 +24,13 @@ try {
 	if (count === true) {
 		st.executeBatch();
 	}	
- 
+    */
+	
+	sqlstmt = "INSERT INTO \"INTEGRATION\".\"ARIBA_REQUISITION\" (\"APPROVEDSTATE\",\"SOURCINGSTATUS\", \"INITIALUNIQUENAME\", \"NAME\") VALUES( 1,2,\"TESTE 1\",\"TESTE 2\") ";
+	var st = conn.prepareStatement(sqlstmt);
+    st.executeBatch();
+	
+	
 	st.close();
 
 	conn.commit();
