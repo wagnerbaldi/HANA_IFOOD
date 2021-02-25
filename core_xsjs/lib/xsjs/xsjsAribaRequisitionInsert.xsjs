@@ -5,11 +5,11 @@ try {
 
 	var jobj = JSON.parse($.request.body.asString());
 	var conn = $.db.getConnection();
-
+    
+    /*	
 	sqlstmt = "INSERT INTO \"INTEGRATION\".\"ARIBA_REQUISITION\" (\"APPROVEDSTATE\",\"SOURCINGSTATUS\", \"INITIALUNIQUENAME\", \"NAME\") VALUES( ?,?,?,?) ";
 	var st = conn.prepareStatement(sqlstmt);
-
-    /*
+    
 	st.setBatchSize(jobj.Records.length);
     
 	for ( var k in jobj.Records) {
