@@ -6,7 +6,7 @@ try {
 	var jobj = JSON.parse($.request.body.asString());
 	var conn = $.db.getConnection();
 
-	sqlstmt = "INSERT INTO \"INTEGRATION\".\"ARIBA_REQUISITION\" (ApprovedState,SourcingStatus,InitialUniqueName,Name) VALUES( ?,?,?,?) ";
+	sqlstmt = "INSERT INTO \"INTEGRATION\".\"ARIBA_REQUISITION\" (\"ApprovedState\",\"SourcingStatus\",\"InitialUniqueName\",\"Name\") VALUES( ?,?,?,?) ";
 	var st = conn.prepareStatement(sqlstmt);
 
     st.setBatchSize(jobj.root.Records.length);
