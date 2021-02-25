@@ -9,14 +9,14 @@ try {
 	sqlstmt = "INSERT INTO \"INTEGRATION\".\"ARIBA_REQUISITION\" (\"ApprovedState\",\"SourcingStatus\",\"InitialUniqueName\",\"Name\") VALUES( ?,?,?,?) ";
 	var st = conn.prepareStatement(sqlstmt);
 
-    st.setBatchSize(jobj.root.Records.length);
+    st.setBatchSize(jobj.Records.length);
     
-	for ( var k in jobj.root.Records) {
+	for ( var k in jobj.Records) {
 		count = true;
-		st.setString(1,jobj.root.Records[k].ApprovedState);
-		st.setString(2,jobj.root.Records[k].SourcingStatus );
-		st.setString(3,jobj.root.Records[k].InitialUniqueName);
-		st.setString(4,jobj.root.Records[k].Name);
+		st.setString(1,jobj.Records[k].ApprovedState);
+		st.setString(2,jobj.Records[k].SourcingStatus );
+		st.setString(3,jobj.Records[k].InitialUniqueName);
+		st.setString(4,jobj.Records[k].Name);
 		st.addBatch();
 	}
 	
