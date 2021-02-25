@@ -26,7 +26,7 @@ try {
 	}	
     */
 	
-	sqlstmt = "INSERT INTO \"INTEGRATION\".\"ARIBA_REQUISITION\" (\"APPROVEDSTATE\",\"SOURCINGSTATUS\", \"INITIALUNIQUENAME\", \"NAME\") VALUES( 1,2,\"TESTE 1\",\"TESTE 2\") ";
+	sqlstmt = "INSERT INTO \"INTEGRATION\".\"ARIBA_REQUISITION\" (\"APPROVEDSTATE\",\"SOURCINGSTATUS\", \"INITIALUNIQUENAME\", \"NAME\") VALUES( 1,2,'TESTE Loss','TESTE Igor') ";
 	var st = conn.prepareStatement(sqlstmt);
     st.executeBatch();
 	
